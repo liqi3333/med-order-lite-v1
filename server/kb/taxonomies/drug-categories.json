@@ -1,0 +1,201 @@
+{
+  "systems": [
+    { "value": "western_medicine", "label": "西药" },
+    { "value": "chinese_patent_medicine", "label": "中成药" },
+    { "value": "biologics", "label": "生物制品" },
+    { "value": "hospital_preparation", "label": "医疗机构制剂" }
+  ],
+  "categories": [
+    {
+      "value": "anti_infective",
+      "label": "抗感染药",
+      "system": "western_medicine",
+      "children": [
+        { "value": "antibacterial", "label": "抗菌药" },
+        { "value": "antiviral", "label": "抗病毒药" },
+        { "value": "antifungal", "label": "抗真菌药" },
+        { "value": "antiparasitic", "label": "抗寄生虫药" }
+      ]
+    },
+    {
+      "value": "cardiovascular",
+      "label": "心血管系统用药",
+      "system": "western_medicine",
+      "children": [
+        { "value": "antihypertensive", "label": "降压药" },
+        { "value": "antiarrhythmic", "label": "抗心律失常药" },
+        { "value": "lipid_lowering", "label": "调脂药" },
+        { "value": "antianginal", "label": "抗心绞痛药" },
+        { "value": "heart_failure", "label": "心衰用药" }
+      ]
+    },
+    {
+      "value": "digestive_system",
+      "label": "消化系统用药",
+      "system": "western_medicine",
+      "children": [
+        { "value": "acid_suppressant", "label": "抑酸药" },
+        { "value": "gastroprokinetic", "label": "促胃肠动力药" },
+        { "value": "laxative", "label": "泻药" },
+        { "value": "antidiarrheal", "label": "止泻药" },
+        { "value": "hepatobiliary", "label": "肝胆疾病用药" }
+      ]
+    },
+    {
+      "value": "respiratory_system",
+      "label": "呼吸系统用药",
+      "system": "western_medicine",
+      "children": [
+        { "value": "bronchodilator", "label": "支气管扩张药" },
+        { "value": "expectorant", "label": "祛痰药" },
+        { "value": "antitussive", "label": "镇咳药" },
+        { "value": "anti_asthma", "label": "平喘药" }
+      ]
+    },
+    {
+      "value": "endocrine_metabolic",
+      "label": "内分泌及代谢用药",
+      "system": "western_medicine",
+      "children": [
+        { "value": "antidiabetic", "label": "降糖药" },
+        { "value": "thyroid", "label": "甲状腺疾病用药" },
+        { "value": "gout", "label": "痛风用药" },
+        { "value": "osteoporosis", "label": "骨质疏松用药" }
+      ]
+    },
+    {
+      "value": "nervous_system",
+      "label": "神经系统用药",
+      "system": "western_medicine",
+      "children": [
+        { "value": "antiepileptic", "label": "抗癫痫药" },
+        { "value": "antiparkinson", "label": "抗帕金森药" },
+        { "value": "cerebrovascular", "label": "脑血管疾病用药" },
+        { "value": "migraine", "label": "偏头痛用药" }
+      ]
+    },
+    {
+      "value": "psychiatric",
+      "label": "精神科用药",
+      "system": "western_medicine",
+      "children": [
+        { "value": "antidepressant", "label": "抗抑郁药" },
+        { "value": "antipsychotic", "label": "抗精神病药" },
+        { "value": "anxiolytic", "label": "抗焦虑药" },
+        { "value": "hypnotic", "label": "镇静催眠药" }
+      ]
+    },
+    {
+      "value": "oncology",
+      "label": "肿瘤用药",
+      "system": "western_medicine",
+      "children": [
+        { "value": "cytotoxic", "label": "细胞毒药物" },
+        { "value": "targeted", "label": "靶向药" },
+        { "value": "immunotherapy", "label": "肿瘤免疫治疗药" },
+        { "value": "endocrine_therapy", "label": "肿瘤内分泌治疗药" }
+      ]
+    },
+    {
+      "value": "immunology",
+      "label": "免疫系统用药",
+      "system": "western_medicine",
+      "children": [
+        { "value": "immunosuppressant", "label": "免疫抑制剂" },
+        { "value": "immunomodulator", "label": "免疫调节剂" },
+        { "value": "anti_allergy", "label": "抗过敏药" }
+      ]
+    },
+    {
+      "value": "blood_system",
+      "label": "血液系统用药",
+      "system": "western_medicine",
+      "children": [
+        { "value": "anticoagulant", "label": "抗凝药" },
+        { "value": "antiplatelet", "label": "抗血小板药" },
+        { "value": "hemostatic", "label": "止血药" },
+        { "value": "hematopoietic", "label": "造血相关用药" }
+      ]
+    },
+    {
+      "value": "urology_reproductive",
+      "label": "泌尿与生殖系统用药",
+      "system": "western_medicine",
+      "children": [
+        { "value": "diuretic", "label": "利尿药" },
+        { "value": "bph", "label": "前列腺疾病用药" },
+        { "value": "gynecology", "label": "妇科用药" }
+      ]
+    },
+    {
+      "value": "dermatology",
+      "label": "皮肤科用药",
+      "system": "western_medicine",
+      "children": [
+        { "value": "topical_antimicrobial", "label": "外用抗感染药" },
+        { "value": "topical_steroid", "label": "外用糖皮质激素" },
+        { "value": "acne", "label": "痤疮用药" }
+      ]
+    },
+    {
+      "value": "ophthalmology_ent",
+      "label": "眼科与耳鼻喉科用药",
+      "system": "western_medicine",
+      "children": [
+        { "value": "ophthalmic", "label": "眼科用药" },
+        { "value": "otic", "label": "耳科用药" },
+        { "value": "nasal", "label": "鼻用制剂" }
+      ]
+    },
+    {
+      "value": "anesthesia_analgesia",
+      "label": "麻醉镇痛用药",
+      "system": "western_medicine",
+      "children": [
+        { "value": "local_anesthetic", "label": "局部麻醉药" },
+        { "value": "general_anesthetic", "label": "全身麻醉药" },
+        { "value": "opioid_analgesic", "label": "阿片类镇痛药" },
+        { "value": "non_opioid_analgesic", "label": "非阿片镇痛药" }
+      ]
+    },
+    {
+      "value": "nutrition_electrolyte",
+      "label": "营养、电解质与补液",
+      "system": "western_medicine",
+      "children": [
+        { "value": "parenteral_nutrition", "label": "肠外营养" },
+        { "value": "electrolyte", "label": "电解质制剂" },
+        { "value": "vitamin", "label": "维生素" },
+        { "value": "fluid", "label": "补液制剂" }
+      ]
+    },
+    {
+      "value": "diagnostic_agent",
+      "label": "诊断用药与造影剂",
+      "system": "western_medicine",
+      "children": [
+        { "value": "contrast_agent", "label": "造影剂" },
+        { "value": "diagnostic_reagent", "label": "诊断用试剂" }
+      ]
+    },
+    {
+      "value": "vaccine",
+      "label": "疫苗",
+      "system": "biologics",
+      "children": [
+        { "value": "inactivated_vaccine", "label": "灭活疫苗" },
+        { "value": "live_attenuated_vaccine", "label": "减毒活疫苗" },
+        { "value": "recombinant_vaccine", "label": "重组疫苗" }
+      ]
+    },
+    {
+      "value": "traditional_respiratory",
+      "label": "中成药-呼吸系统",
+      "system": "chinese_patent_medicine",
+      "children": [
+        { "value": "relieve_cough", "label": "止咳化痰" },
+        { "value": "clear_heat", "label": "清热解毒" }
+      ]
+    }
+  ]
+}

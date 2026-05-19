@@ -1,0 +1,1459 @@
+[
+  {
+    "id": "drug-amoxicillin-capsule",
+    "generic_cn": "阿莫西林胶囊",
+    "generic_en": "Amoxicillin Capsules",
+    "brand_names": [],
+    "aliases": [
+      "阿莫西林"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "general_antibacterial",
+    "dosage_forms": [
+      "capsule"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "allergy_check_required",
+      "renal_adjustment_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-amoxicillin-capsule.md",
+    "searchable_text": "阿莫西林胶囊\namoxicillin capsules\n阿莫西林\naminopenicillin\n敏感菌所致上呼吸道、下呼吸道、泌尿生殖道、皮肤软组织等感染；具体适应症以批准说明书为准。\n按批准说明书、感染部位、病原体敏感性、年龄、体重、肾功能调整；本模板不内置具体剂量。\n对青霉素类药物过敏者禁用；既往严重β-内酰胺过敏史需避免使用。\n用药前询问过敏史；注意严重过敏反应、抗生素相关性腹泻、肾功能异常时剂量调整。"
+  },
+  {
+    "id": "drug-amoxicillin-clavulanate-tablet",
+    "generic_cn": "阿莫西林克拉维酸钾片",
+    "generic_en": "Amoxicillin and Clavulanate Potassium Tablets",
+    "brand_names": [],
+    "aliases": [
+      "阿莫西林/克拉维酸"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "general_antibacterial",
+    "dosage_forms": [
+      "tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "allergy_check_required",
+      "renal_adjustment_required",
+      "hepatic_adjustment_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-amoxicillin-clavulanate-tablet.md",
+    "searchable_text": "阿莫西林克拉维酸钾片\namoxicillin and clavulanate potassium tablets\n阿莫西林/克拉维酸\nbeta_lactam_beta_lactamase_inhibitor\n用于敏感产β-内酰胺酶菌所致呼吸道、泌尿道、皮肤软组织等感染；具体适应症以批准说明书为准。\n按批准说明书和感染严重程度使用；应核对肝肾功能、年龄和体重；本模板不内置具体剂量。\n对青霉素类、头孢类或本品任一成分过敏者禁用；既往本品相关胆汁淤积性黄疸/肝功能障碍者禁用。\n注意过敏反应、肝功能损害、抗生素相关性腹泻；肾功能不全需调整。"
+  },
+  {
+    "id": "drug-azithromycin-tablet",
+    "generic_cn": "阿奇霉素片",
+    "generic_en": "Azithromycin Tablets",
+    "brand_names": [],
+    "aliases": [
+      "阿奇霉素"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "general_antibacterial",
+    "dosage_forms": [
+      "tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "hepatic_adjustment_required",
+      "interaction_check_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-azithromycin-tablet.md",
+    "searchable_text": "阿奇霉素片\nazithromycin tablets\n阿奇霉素\nmacrolide_antibiotic\n敏感菌所致呼吸道、皮肤软组织感染，部分非典型病原体感染等；具体适应症以批准说明书为准。\n按批准说明书疗程使用；肝功能异常、心律失常风险患者需核对；本模板不内置具体剂量。\n对大环内酯类过敏者禁用；既往本品相关胆汁淤积性黄疸/肝功能障碍者禁用。\n注意qt间期延长、肝功能损害、过敏反应；避免不必要抗菌药使用。"
+  },
+  {
+    "id": "drug-cefuroxime-axetil-tablet",
+    "generic_cn": "头孢呋辛酯片",
+    "generic_en": "Cefuroxime Axetil Tablets",
+    "brand_names": [],
+    "aliases": [
+      "头孢呋辛酯"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "general_antibacterial",
+    "dosage_forms": [
+      "tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "allergy_check_required",
+      "renal_adjustment_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-cefuroxime-axetil-tablet.md",
+    "searchable_text": "头孢呋辛酯片\ncefuroxime axetil tablets\n头孢呋辛酯\nsecond_generation_cephalosporin\n敏感菌所致呼吸道、泌尿道、皮肤软组织等感染；具体适应症以批准说明书为准。\n按批准说明书和感染部位使用；肾功能不全需核对调整；本模板不内置具体剂量。\n对头孢菌素类过敏者禁用；有严重青霉素过敏史者慎用。\n询问β-内酰胺过敏史；注意伪膜性结肠炎、肾功能异常、抗凝合用风险。"
+  },
+  {
+    "id": "drug-cephalexin-capsule",
+    "generic_cn": "头孢氨苄胶囊",
+    "generic_en": "Cephalexin Capsules",
+    "brand_names": [],
+    "aliases": [
+      "头孢氨苄"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "general_antibacterial",
+    "dosage_forms": [
+      "capsule"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "allergy_check_required",
+      "renal_adjustment_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-cephalexin-capsule.md",
+    "searchable_text": "头孢氨苄胶囊\ncephalexin capsules\n头孢氨苄\nfirst_generation_cephalosporin\n敏感菌所致呼吸道、泌尿道、皮肤软组织等轻中度感染；具体适应症以批准说明书为准。\n按批准说明书、感染部位和肾功能使用；本模板不内置具体剂量。\n对头孢菌素类过敏者禁用；严重β-内酰胺过敏史慎用。\n注意交叉过敏、抗生素相关性腹泻和肾功能调整。"
+  },
+  {
+    "id": "drug-ciprofloxacin-tablet",
+    "generic_cn": "环丙沙星片",
+    "generic_en": "Ciprofloxacin Tablets",
+    "brand_names": [],
+    "aliases": [
+      "环丙沙星"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "general_antibacterial",
+    "dosage_forms": [
+      "tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "renal_adjustment_required",
+      "interaction_check_required",
+      "pregnancy_check_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-ciprofloxacin-tablet.md",
+    "searchable_text": "环丙沙星片\nciprofloxacin tablets\n环丙沙星\nfluoroquinolone_antibiotic\n敏感革兰阴性菌等所致感染，泌尿道、胃肠道等感染；具体适应症以批准说明书为准。\n按批准说明书使用；肾功能不全需核对调整；本模板不内置具体剂量。\n对喹诺酮类过敏者禁用；特殊人群限制需按说明书。\n注意肌腱、qt、中枢神经系统、血糖、光敏反应等风险。"
+  },
+  {
+    "id": "drug-clarithromycin-tablet",
+    "generic_cn": "克拉霉素片",
+    "generic_en": "Clarithromycin Tablets",
+    "brand_names": [],
+    "aliases": [
+      "克拉霉素"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "general_antibacterial",
+    "dosage_forms": [
+      "tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "hepatic_adjustment_required",
+      "renal_adjustment_required",
+      "interaction_check_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-clarithromycin-tablet.md",
+    "searchable_text": "克拉霉素片\nclarithromycin tablets\n克拉霉素\nmacrolide_antibiotic\n敏感菌所致呼吸道、皮肤软组织感染及幽门螺杆菌根除方案组成部分；具体以说明书为准。\n按批准说明书和联合方案使用；肝肾功能异常需核对；本模板不内置具体剂量。\n对大环内酯类过敏者禁用；与某些严重相互作用药物合用禁忌需逐项核对。\n注意cyp3a相关相互作用、qt延长、肝毒性。"
+  },
+  {
+    "id": "drug-doxycycline-capsule",
+    "generic_cn": "多西环素胶囊",
+    "generic_en": "Doxycycline Capsules",
+    "brand_names": [],
+    "aliases": [
+      "强力霉素",
+      "多西环素"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "general_antibacterial",
+    "dosage_forms": [
+      "capsule"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "pregnancy_check_required",
+      "hepatic_adjustment_required",
+      "interaction_check_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-doxycycline-capsule.md",
+    "searchable_text": "多西环素胶囊\ndoxycycline capsules\n强力霉素\n多西环素\ntetracycline_antibiotic\n敏感病原体所致呼吸道、泌尿生殖道、皮肤软组织、立克次体等感染；具体适应症以说明书为准。\n按批准说明书使用；儿童、妊娠、哺乳需严格核对；本模板不内置具体剂量。\n对四环素类过敏者禁用；妊娠和儿童使用限制需按说明书。\n注意光敏反应、食管刺激、牙齿/骨骼影响、肝功能风险。"
+  },
+  {
+    "id": "drug-levofloxacin-tablet",
+    "generic_cn": "左氧氟沙星片",
+    "generic_en": "Levofloxacin Tablets",
+    "brand_names": [],
+    "aliases": [
+      "左氧氟沙星"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "general_antibacterial",
+    "dosage_forms": [
+      "tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "renal_adjustment_required",
+      "interaction_check_required",
+      "pregnancy_check_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-levofloxacin-tablet.md",
+    "searchable_text": "左氧氟沙星片\nlevofloxacin tablets\n左氧氟沙星\nfluoroquinolone_antibiotic\n敏感菌所致呼吸道、泌尿道、皮肤软组织等感染；具体适应症以批准说明书为准。\n按批准说明书使用；肾功能不全需调整；本模板不内置具体剂量。\n对喹诺酮类过敏者禁用；儿童、妊娠等特殊人群需按本地说明书严格限制。\n注意肌腱炎/肌腱断裂、qt延长、中枢神经系统反应、血糖异常、周围神经病变。"
+  },
+  {
+    "id": "drug-metronidazole-tablet",
+    "generic_cn": "甲硝唑片",
+    "generic_en": "Metronidazole Tablets",
+    "brand_names": [],
+    "aliases": [
+      "甲硝唑"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "general_antibacterial",
+    "dosage_forms": [
+      "tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "hepatic_adjustment_required",
+      "interaction_check_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-metronidazole-tablet.md",
+    "searchable_text": "甲硝唑片\nmetronidazole tablets\n甲硝唑\nnitroimidazole_antimicrobial\n厌氧菌感染、滴虫病、阿米巴病等；具体适应症以批准说明书为准。\n按批准说明书和感染类型使用；肝功能异常需核对；本模板不内置具体剂量。\n对硝基咪唑类过敏者禁用；饮酒相关禁忌/警示需按说明书。\n治疗期间及停药后一段时间避免饮酒；注意神经系统反应、肝病患者风险。"
+  },
+  {
+    "id": "drug-amlodipine-tablet",
+    "generic_cn": "氨氯地平片",
+    "generic_en": "Amlodipine Tablets",
+    "brand_names": [],
+    "aliases": [
+      "苯磺酸氨氯地平"
+    ],
+    "system": "western_medicine",
+    "primary_category": "cardiovascular",
+    "secondary_category": "general_cardiovascular",
+    "dosage_forms": [
+      "tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "hepatic_adjustment_required",
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/cardiovascular/drug-amlodipine-tablet.md",
+    "searchable_text": "氨氯地平片\namlodipine tablets\n苯磺酸氨氯地平\ncalcium_channel_blocker\n高血压、慢性稳定型心绞痛等；具体适应症以批准说明书为准。\n按批准说明书个体化给药；肝功能不全、老年患者需谨慎；本模板不内置具体剂量。\n对二氢吡啶类或本品成分过敏者禁用；严重低血压等情况需核对。\n注意外周水肿、低血压、心绞痛加重风险；肝功能异常谨慎。"
+  },
+  {
+    "id": "drug-aspirin-enteric-coated-tablet",
+    "generic_cn": "阿司匹林肠溶片",
+    "generic_en": "Aspirin Enteric-coated Tablets",
+    "brand_names": [],
+    "aliases": [
+      "乙酰水杨酸"
+    ],
+    "system": "western_medicine",
+    "primary_category": "cardiovascular",
+    "secondary_category": "general_cardiovascular",
+    "dosage_forms": [
+      "enteric_coated_tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "allergy_check_required",
+      "interaction_check_required",
+      "high_alert_drug"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/cardiovascular/drug-aspirin-enteric-coated-tablet.md",
+    "searchable_text": "阿司匹林肠溶片\naspirin enteric-coated tablets\n乙酰水杨酸\nantiplatelet_nsaid\n抗血小板治疗、部分疼痛/发热用途取决于制剂和说明书；具体以批准说明书为准。\n抗血小板用途需按说明书和医嘱；出血风险需核对；本模板不内置具体剂量。\n阿司匹林/nsaids过敏、活动性出血、严重溃疡等禁忌需核对。\n注意胃肠出血、过敏/哮喘、围手术期出血风险。"
+  },
+  {
+    "id": "drug-atorvastatin-tablet",
+    "generic_cn": "阿托伐他汀钙片",
+    "generic_en": "Atorvastatin Calcium Tablets",
+    "brand_names": [],
+    "aliases": [
+      "阿托伐他汀"
+    ],
+    "system": "western_medicine",
+    "primary_category": "cardiovascular",
+    "secondary_category": "general_cardiovascular",
+    "dosage_forms": [
+      "tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "hepatic_adjustment_required",
+      "pregnancy_check_required",
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/cardiovascular/drug-atorvastatin-tablet.md",
+    "searchable_text": "阿托伐他汀钙片\natorvastatin calcium tablets\n阿托伐他汀\nstatin\n高胆固醇血症、混合型血脂异常及心血管风险管理；具体适应症以批准说明书为准。\n按血脂目标、风险分层和说明书使用；肝功能和肌病风险需核对；本模板不内置具体剂量。\n活动性肝病、妊娠/哺乳等禁忌需核对；对本品过敏者禁用。\n注意肝酶升高、肌痛/横纹肌溶解、相互作用。"
+  },
+  {
+    "id": "drug-bisoprolol-tablet",
+    "generic_cn": "比索洛尔片",
+    "generic_en": "Bisoprolol Tablets",
+    "brand_names": [],
+    "aliases": [
+      "富马酸比索洛尔"
+    ],
+    "system": "western_medicine",
+    "primary_category": "cardiovascular",
+    "secondary_category": "general_cardiovascular",
+    "dosage_forms": [
+      "tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/cardiovascular/drug-bisoprolol-tablet.md",
+    "searchable_text": "比索洛尔片\nbisoprolol tablets\n富马酸比索洛尔\nbeta_blocker\n高血压、冠心病、慢性心力衰竭等；具体适应症以批准说明书为准。\n按批准说明书逐步调整；监测心率血压；本模板不内置具体剂量。\n严重心动过缓、房室传导阻滞、急性心衰等禁忌需核对。\n注意低血压、心动过缓、支气管痉挛、糖尿病低血糖掩盖症状。"
+  },
+  {
+    "id": "drug-clopidogrel-tablet",
+    "generic_cn": "氯吡格雷片",
+    "generic_en": "Clopidogrel Tablets",
+    "brand_names": [],
+    "aliases": [
+      "硫酸氢氯吡格雷"
+    ],
+    "system": "western_medicine",
+    "primary_category": "cardiovascular",
+    "secondary_category": "general_cardiovascular",
+    "dosage_forms": [
+      "tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "interaction_check_required",
+      "hepatic_adjustment_required",
+      "high_alert_drug"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/cardiovascular/drug-clopidogrel-tablet.md",
+    "searchable_text": "氯吡格雷片\nclopidogrel tablets\n硫酸氢氯吡格雷\nantiplatelet\n动脉粥样硬化血栓事件预防等；具体适应症以批准说明书为准。\n按批准说明书和适应症使用；关注出血风险；本模板不内置具体剂量。\n活动性病理性出血、对本品过敏者禁用；严重肝病需核对。\n注意出血、血栓性血小板减少性紫癜、cyp2c19代谢影响。"
+  },
+  {
+    "id": "drug-losartan-tablet",
+    "generic_cn": "氯沙坦钾片",
+    "generic_en": "Losartan Potassium Tablets",
+    "brand_names": [],
+    "aliases": [
+      "氯沙坦"
+    ],
+    "system": "western_medicine",
+    "primary_category": "cardiovascular",
+    "secondary_category": "general_cardiovascular",
+    "dosage_forms": [
+      "tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "renal_adjustment_required",
+      "pregnancy_check_required",
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/cardiovascular/drug-losartan-tablet.md",
+    "searchable_text": "氯沙坦钾片\nlosartan potassium tablets\n氯沙坦\nangiotensin_receptor_blocker\n高血压，部分患者肾脏保护等；具体适应症以批准说明书为准。\n按批准说明书个体化使用；肾功能、血钾和妊娠状态需核对；本模板不内置具体剂量。\n妊娠禁用/避免使用；对本品过敏者禁用；严重肝病等需核对。\n注意低血压、高钾血症、肾功能变化；妊娠期可致胎儿伤害。"
+  },
+  {
+    "id": "drug-metoprolol-tablet",
+    "generic_cn": "美托洛尔片",
+    "generic_en": "Metoprolol Tablets",
+    "brand_names": [],
+    "aliases": [
+      "酒石酸美托洛尔",
+      "琥珀酸美托洛尔"
+    ],
+    "system": "western_medicine",
+    "primary_category": "cardiovascular",
+    "secondary_category": "general_cardiovascular",
+    "dosage_forms": [
+      "tablet",
+      "extended_release_tablet"
+    ],
+    "routes": [
+      "oral",
+      "oral"
+    ],
+    "risk_tags": [
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/cardiovascular/drug-metoprolol-tablet.md",
+    "searchable_text": "美托洛尔片\nmetoprolol tablets\n酒石酸美托洛尔\n琥珀酸美托洛尔\nbeta_blocker\n高血压、心绞痛、心率控制、心肌梗死后等；具体适应症以批准说明书为准。\n不同盐型/剂型不可简单等量替换；按说明书和心率血压调整；本模板不内置具体剂量。\n严重心动过缓、二/三度房室传导阻滞、心源性休克等禁忌需核对。\n注意心动过缓、低血压、支气管痉挛、突然停药风险。"
+  },
+  {
+    "id": "drug-nifedipine-controlled-release-tablet",
+    "generic_cn": "硝苯地平控释片",
+    "generic_en": "Nifedipine Controlled-release Tablets",
+    "brand_names": [],
+    "aliases": [
+      "硝苯地平"
+    ],
+    "system": "western_medicine",
+    "primary_category": "cardiovascular",
+    "secondary_category": "general_cardiovascular",
+    "dosage_forms": [
+      "controlled_release_tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/cardiovascular/drug-nifedipine-controlled-release-tablet.md",
+    "searchable_text": "硝苯地平控释片\nnifedipine controlled-release tablets\n硝苯地平\ncalcium_channel_blocker\n高血压、心绞痛等；具体适应症以批准说明书为准。\n按批准说明书使用，不得掰开或咀嚼控释制剂；本模板不内置具体剂量。\n对二氢吡啶类过敏者禁用；心源性休克等禁忌需核对。\n注意低血压、反射性心动过速、水肿；避免不当使用速释制剂。"
+  },
+  {
+    "id": "drug-rosuvastatin-tablet",
+    "generic_cn": "瑞舒伐他汀钙片",
+    "generic_en": "Rosuvastatin Calcium Tablets",
+    "brand_names": [],
+    "aliases": [
+      "瑞舒伐他汀"
+    ],
+    "system": "western_medicine",
+    "primary_category": "cardiovascular",
+    "secondary_category": "general_cardiovascular",
+    "dosage_forms": [
+      "tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "hepatic_adjustment_required",
+      "renal_adjustment_required",
+      "pregnancy_check_required",
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/cardiovascular/drug-rosuvastatin-tablet.md",
+    "searchable_text": "瑞舒伐他汀钙片\nrosuvastatin calcium tablets\n瑞舒伐他汀\nstatin\n高胆固醇血症、混合型血脂异常及心血管风险管理；具体适应症以说明书为准。\n按批准说明书、肾功能和风险分层使用；本模板不内置具体剂量。\n活动性肝病、妊娠/哺乳等禁忌需核对。\n注意肌病/横纹肌溶解、肝酶、蛋白尿/血尿风险；肾功能异常需核对。"
+  },
+  {
+    "id": "drug-valsartan-tablet",
+    "generic_cn": "缬沙坦胶囊/片",
+    "generic_en": "Valsartan Tablets/Capsules",
+    "brand_names": [],
+    "aliases": [
+      "缬沙坦"
+    ],
+    "system": "western_medicine",
+    "primary_category": "cardiovascular",
+    "secondary_category": "general_cardiovascular",
+    "dosage_forms": [
+      "tablet",
+      "capsule"
+    ],
+    "routes": [
+      "oral",
+      "oral"
+    ],
+    "risk_tags": [
+      "renal_adjustment_required",
+      "pregnancy_check_required",
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/cardiovascular/drug-valsartan-tablet.md",
+    "searchable_text": "缬沙坦胶囊/片\nvalsartan tablets/capsules\n缬沙坦\nangiotensin_receptor_blocker\n高血压、心力衰竭等；具体适应症以批准说明书为准。\n按批准说明书个体化给药；监测肾功能、血钾；本模板不内置具体剂量。\n妊娠禁用/避免使用；对本品过敏者禁用。\n注意低血压、高钾血症、肾功能变化；肝肾功能异常需核对。"
+  },
+  {
+    "id": "drug-acetaminophen-tablet",
+    "generic_cn": "对乙酰氨基酚片",
+    "generic_en": "Acetaminophen/Paracetamol Tablets",
+    "brand_names": [],
+    "aliases": [
+      "扑热息痛",
+      "对乙酰氨基酚"
+    ],
+    "system": "western_medicine",
+    "primary_category": "common_high_frequency",
+    "secondary_category": "general_common",
+    "dosage_forms": [
+      "tablet",
+      "oral_solution"
+    ],
+    "routes": [
+      "oral",
+      "oral"
+    ],
+    "risk_tags": [
+      "hepatic_adjustment_required",
+      "interaction_check_required",
+      "high_alert_drug"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/common-high-frequency/drug-acetaminophen-tablet.md",
+    "searchable_text": "对乙酰氨基酚片\nacetaminophen/paracetamol tablets\n扑热息痛\n对乙酰氨基酚\nanalgesic_antipyretic\n发热、轻中度疼痛对症治疗；具体以批准说明书为准。\n按批准说明书，避免超量和重复含同成分复方；本模板不内置具体剂量。\n严重肝功能不全、对本品过敏者禁用。\n注意肝毒性、酒精、重复用药和最大日剂量；儿童按体重核对。"
+  },
+  {
+    "id": "drug-cetirizine-tablet",
+    "generic_cn": "西替利嗪片",
+    "generic_en": "Cetirizine Tablets",
+    "brand_names": [],
+    "aliases": [
+      "西替利嗪"
+    ],
+    "system": "western_medicine",
+    "primary_category": "common_high_frequency",
+    "secondary_category": "general_common",
+    "dosage_forms": [
+      "tablet",
+      "oral_solution"
+    ],
+    "routes": [
+      "oral",
+      "oral"
+    ],
+    "risk_tags": [
+      "renal_adjustment_required",
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/common-high-frequency/drug-cetirizine-tablet.md",
+    "searchable_text": "西替利嗪片\ncetirizine tablets\n西替利嗪\nsecond_generation_antihistamine\n过敏性鼻炎、荨麻疹等过敏症状缓解；具体以批准说明书为准。\n按批准说明书使用；肾功能异常需核对；本模板不内置具体剂量。\n对本品或羟嗪等过敏者禁用；严重肾功能不全需核对。\n注意嗜睡、驾驶/机械操作；肾功能异常剂量调整。"
+  },
+  {
+    "id": "drug-dexamethasone-tablet-injection",
+    "generic_cn": "地塞米松片/注射液",
+    "generic_en": "Dexamethasone Tablets/Injection",
+    "brand_names": [],
+    "aliases": [
+      "地塞米松"
+    ],
+    "system": "western_medicine",
+    "primary_category": "common_high_frequency",
+    "secondary_category": "general_common",
+    "dosage_forms": [
+      "tablet",
+      "injection"
+    ],
+    "routes": [
+      "oral_iv_im",
+      "oral_iv_im"
+    ],
+    "risk_tags": [
+      "interaction_check_required",
+      "high_alert_drug"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/common-high-frequency/drug-dexamethasone-tablet-injection.md",
+    "searchable_text": "地塞米松片/注射液\ndexamethasone tablets/injection\n地塞米松\nsystemic_corticosteroid\n过敏、炎症、免疫相关疾病及急救辅助场景；具体以批准说明书为准。\n按批准说明书和病情使用；长期用药需减量；本模板不内置具体剂量。\n系统性真菌感染、对本品过敏等禁忌需核对。\n注意感染、血糖、胃肠道、精神症状、肾上腺抑制。"
+  },
+  {
+    "id": "drug-ibuprofen-tablet",
+    "generic_cn": "布洛芬片/胶囊",
+    "generic_en": "Ibuprofen Tablets/Capsules",
+    "brand_names": [],
+    "aliases": [
+      "布洛芬"
+    ],
+    "system": "western_medicine",
+    "primary_category": "common_high_frequency",
+    "secondary_category": "general_common",
+    "dosage_forms": [
+      "tablet",
+      "capsule",
+      "suspension"
+    ],
+    "routes": [
+      "oral",
+      "oral",
+      "oral"
+    ],
+    "risk_tags": [
+      "renal_adjustment_required",
+      "hepatic_adjustment_required",
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/common-high-frequency/drug-ibuprofen-tablet.md",
+    "searchable_text": "布洛芬片/胶囊\nibuprofen tablets/capsules\n布洛芬\nnsaid\n发热、轻中度疼痛、炎症相关疼痛等对症治疗；具体以批准说明书为准。\n按批准说明书短期使用；胃肠、肾功能和心血管风险需核对；本模板不内置具体剂量。\nnsaids过敏、活动性消化道出血/溃疡、严重肝肾心功能不全等禁忌需核对。\n注意胃肠出血、肾损伤、心血管事件、哮喘诱发。"
+  },
+  {
+    "id": "drug-levothyroxine-tablet",
+    "generic_cn": "左甲状腺素钠片",
+    "generic_en": "Levothyroxine Sodium Tablets",
+    "brand_names": [],
+    "aliases": [
+      "左甲状腺素"
+    ],
+    "system": "western_medicine",
+    "primary_category": "common_high_frequency",
+    "secondary_category": "general_common",
+    "dosage_forms": [
+      "tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/common-high-frequency/drug-levothyroxine-tablet.md",
+    "searchable_text": "左甲状腺素钠片\nlevothyroxine sodium tablets\n左甲状腺素\nthyroid_hormone\n甲状腺功能减退替代治疗等；具体以批准说明书为准。\n按批准说明书空腹规律服用并监测甲功；本模板不内置具体剂量。\n未治疗肾上腺功能不全、甲状腺毒症等禁忌需核对。\n注意心血管疾病患者、老年患者、过量导致甲亢表现；与食物/药物间隔。"
+  },
+  {
+    "id": "drug-loratadine-tablet",
+    "generic_cn": "氯雷他定片",
+    "generic_en": "Loratadine Tablets",
+    "brand_names": [],
+    "aliases": [
+      "氯雷他定"
+    ],
+    "system": "western_medicine",
+    "primary_category": "common_high_frequency",
+    "secondary_category": "general_common",
+    "dosage_forms": [
+      "tablet",
+      "syrup"
+    ],
+    "routes": [
+      "oral",
+      "oral"
+    ],
+    "risk_tags": [
+      "hepatic_adjustment_required",
+      "renal_adjustment_required",
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/common-high-frequency/drug-loratadine-tablet.md",
+    "searchable_text": "氯雷他定片\nloratadine tablets\n氯雷他定\nsecond_generation_antihistamine\n过敏性鼻炎、慢性荨麻疹等过敏症状缓解；具体以批准说明书为准。\n按批准说明书使用；肝肾功能异常需核对；本模板不内置具体剂量。\n对本品过敏者禁用。\n注意嗜睡虽较少但仍可发生；肝肾功能异常需谨慎。"
+  },
+  {
+    "id": "drug-lorazepam-tablet-injection",
+    "generic_cn": "劳拉西泮片/注射液",
+    "generic_en": "Lorazepam Tablets/Injection",
+    "brand_names": [],
+    "aliases": [
+      "劳拉西泮"
+    ],
+    "system": "western_medicine",
+    "primary_category": "common_high_frequency",
+    "secondary_category": "general_common",
+    "dosage_forms": [
+      "tablet",
+      "injection"
+    ],
+    "routes": [
+      "oral_iv_im",
+      "oral_iv_im"
+    ],
+    "risk_tags": [
+      "high_alert_drug",
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/common-high-frequency/drug-lorazepam-tablet-injection.md",
+    "searchable_text": "劳拉西泮片/注射液\nlorazepam tablets/injection\n劳拉西泮\nbenzodiazepine\n焦虑、镇静、癫痫持续状态等特定场景；具体以批准说明书为准。\n受控/高风险药物；按批准说明书和监管要求使用；本模板不内置具体剂量。\n严重呼吸功能不全、睡眠呼吸暂停、重症肌无力等禁忌需核对。\n注意呼吸抑制、镇静、跌倒、依赖和戒断风险；与酒精/阿片合用危险。"
+  },
+  {
+    "id": "drug-metformin-tablet",
+    "generic_cn": "二甲双胍片",
+    "generic_en": "Metformin Tablets",
+    "brand_names": [],
+    "aliases": [
+      "盐酸二甲双胍"
+    ],
+    "system": "western_medicine",
+    "primary_category": "common_high_frequency",
+    "secondary_category": "general_common",
+    "dosage_forms": [
+      "tablet",
+      "extended_release_tablet"
+    ],
+    "routes": [
+      "oral",
+      "oral"
+    ],
+    "risk_tags": [
+      "renal_adjustment_required",
+      "interaction_check_required",
+      "high_alert_drug"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/common-high-frequency/drug-metformin-tablet.md",
+    "searchable_text": "二甲双胍片\nmetformin tablets\n盐酸二甲双胍\nbiguanide_antidiabetic\n2型糖尿病血糖控制；具体适应症以批准说明书为准。\n按批准说明书随餐/餐后等方式使用；肾功能是关键限制；本模板不内置具体剂量。\n严重肾功能不全、代谢性酸中毒、糖尿病酮症酸中毒等禁忌需核对。\n注意乳酸性酸中毒、肾功能、造影剂/手术暂停规则、胃肠反应。"
+  },
+  {
+    "id": "drug-prednisone-tablet",
+    "generic_cn": "泼尼松片",
+    "generic_en": "Prednisone Tablets",
+    "brand_names": [],
+    "aliases": [
+      "强的松"
+    ],
+    "system": "western_medicine",
+    "primary_category": "common_high_frequency",
+    "secondary_category": "general_common",
+    "dosage_forms": [
+      "tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "interaction_check_required",
+      "high_alert_drug"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/common-high-frequency/drug-prednisone-tablet.md",
+    "searchable_text": "泼尼松片\nprednisone tablets\n强的松\nsystemic_corticosteroid\n炎症、免疫相关疾病等多种适应症；具体以批准说明书和治疗方案为准。\n按病情和说明书使用；长期用药需逐渐减量；本模板不内置具体剂量。\n系统性真菌感染、对本品过敏等禁忌需核对。\n注意感染风险、血糖升高、骨质疏松、胃肠道风险、肾上腺抑制。"
+  },
+  {
+    "id": "drug-regular-insulin-injection",
+    "generic_cn": "普通胰岛素注射液",
+    "generic_en": "Regular Insulin Injection",
+    "brand_names": [],
+    "aliases": [
+      "短效胰岛素",
+      "重组人胰岛素注射液"
+    ],
+    "system": "western_medicine",
+    "primary_category": "common_high_frequency",
+    "secondary_category": "general_common",
+    "dosage_forms": [
+      "injection"
+    ],
+    "routes": [
+      "sc_iv"
+    ],
+    "risk_tags": [
+      "high_alert_drug",
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/common-high-frequency/drug-regular-insulin-injection.md",
+    "searchable_text": "普通胰岛素注射液\nregular insulin injection\n短效胰岛素\n重组人胰岛素注射液\ninsulin\n糖尿病血糖控制、酮症酸中毒等特定场景；具体适应症以批准说明书和方案为准。\n高警示药品；按医嘱、血糖、进食状态和方案使用；本模板不内置具体剂量。\n低血糖发作时禁用；对本品过敏者禁用。\n注意低血糖、给药途径/剂量错误、注射部位、胰岛素种类混淆。"
+  },
+  {
+    "id": "drug-domperidone-tablet",
+    "generic_cn": "多潘立酮片",
+    "generic_en": "Domperidone Tablets",
+    "brand_names": [],
+    "aliases": [
+      "多潘立酮"
+    ],
+    "system": "western_medicine",
+    "primary_category": "digestive_system",
+    "secondary_category": "general_digestive",
+    "dosage_forms": [
+      "tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "hepatic_adjustment_required",
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/digestive-system/drug-domperidone-tablet.md",
+    "searchable_text": "多潘立酮片\ndomperidone tablets\n多潘立酮\nprokinetic_antiemetic\n恶心、呕吐、胃排空延迟相关症状等；具体适应症以批准说明书为准。\n按批准说明书短期使用；心律风险和相互作用需核对；本模板不内置具体剂量。\n中重度肝功能不全、已知qt延长、严重心脏病或与强cyp3a4/qt药合用等禁忌需核对。\n注意qt延长、室性心律失常和猝死风险；老年患者谨慎。"
+  },
+  {
+    "id": "drug-famotidine-tablet",
+    "generic_cn": "法莫替丁片",
+    "generic_en": "Famotidine Tablets",
+    "brand_names": [],
+    "aliases": [
+      "法莫替丁"
+    ],
+    "system": "western_medicine",
+    "primary_category": "digestive_system",
+    "secondary_category": "general_digestive",
+    "dosage_forms": [
+      "tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "renal_adjustment_required",
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/digestive-system/drug-famotidine-tablet.md",
+    "searchable_text": "法莫替丁片\nfamotidine tablets\n法莫替丁\nh2_receptor_antagonist\n胃十二指肠溃疡、反流性食管炎等酸相关疾病；具体以批准说明书为准。\n按批准说明书使用；肾功能不全需核对调整；本模板不内置具体剂量。\n对本品或同类药物过敏者禁用。\n注意肾功能不全、老年患者中枢神经系统反应；症状持续需排除严重疾病。"
+  },
+  {
+    "id": "drug-hydrotalcite-chewable-tablet",
+    "generic_cn": "铝碳酸镁咀嚼片",
+    "generic_en": "Hydrotalcite Chewable Tablets",
+    "brand_names": [],
+    "aliases": [
+      "铝碳酸镁"
+    ],
+    "system": "western_medicine",
+    "primary_category": "digestive_system",
+    "secondary_category": "general_digestive",
+    "dosage_forms": [
+      "chewable_tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "renal_adjustment_required",
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/digestive-system/drug-hydrotalcite-chewable-tablet.md",
+    "searchable_text": "铝碳酸镁咀嚼片\nhydrotalcite chewable tablets\n铝碳酸镁\nantacid_mucosal_protectant\n胃酸过多、胃痛、烧心、反酸等症状缓解；具体以批准说明书为准。\n按批准说明书咀嚼服用；与其他药物间隔；本模板不内置具体剂量。\n严重肾功能不全、对成分过敏等禁忌需核对。\n肾功能不全患者慎用；可能影响其他药物吸收。"
+  },
+  {
+    "id": "drug-lactulose-oral-solution",
+    "generic_cn": "乳果糖口服溶液",
+    "generic_en": "Lactulose Oral Solution",
+    "brand_names": [],
+    "aliases": [
+      "乳果糖"
+    ],
+    "system": "western_medicine",
+    "primary_category": "digestive_system",
+    "secondary_category": "general_digestive",
+    "dosage_forms": [
+      "oral_solution"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/digestive-system/drug-lactulose-oral-solution.md",
+    "searchable_text": "乳果糖口服溶液\nlactulose oral solution\n乳果糖\nosmotic_laxative\n便秘、肝性脑病辅助治疗等；具体以批准说明书为准。\n按批准说明书和治疗目标使用；本模板不内置具体剂量。\n肠梗阻、半乳糖血症等禁忌需核对。\n注意腹泻、电解质紊乱、糖尿病患者糖分影响。"
+  },
+  {
+    "id": "drug-loperamide-capsule",
+    "generic_cn": "洛哌丁胺胶囊",
+    "generic_en": "Loperamide Capsules",
+    "brand_names": [],
+    "aliases": [
+      "洛哌丁胺"
+    ],
+    "system": "western_medicine",
+    "primary_category": "digestive_system",
+    "secondary_category": "general_digestive",
+    "dosage_forms": [
+      "capsule"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/digestive-system/drug-loperamide-capsule.md",
+    "searchable_text": "洛哌丁胺胶囊\nloperamide capsules\n洛哌丁胺\nantidiarrheal\n急慢性腹泻对症治疗；感染性腹泻等需排除禁忌；具体以说明书为准。\n按批准说明书短期使用；本模板不内置具体剂量。\n细菌性肠炎、伪膜性肠炎、急性溃疡性结肠炎等禁忌需核对。\n发热、血便、疑似侵袭性感染时不应自行止泻；过量可致严重心律风险。"
+  },
+  {
+    "id": "drug-metoclopramide-tablet",
+    "generic_cn": "甲氧氯普胺片",
+    "generic_en": "Metoclopramide Tablets",
+    "brand_names": [],
+    "aliases": [
+      "胃复安"
+    ],
+    "system": "western_medicine",
+    "primary_category": "digestive_system",
+    "secondary_category": "general_digestive",
+    "dosage_forms": [
+      "tablet",
+      "injection"
+    ],
+    "routes": [
+      "oral",
+      "oral"
+    ],
+    "risk_tags": [
+      "interaction_check_required",
+      "high_alert_drug"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/digestive-system/drug-metoclopramide-tablet.md",
+    "searchable_text": "甲氧氯普胺片\nmetoclopramide tablets\n胃复安\ndopamine_antagonist_antiemetic\n恶心、呕吐、胃排空延迟等；具体适应症以批准说明书为准。\n按批准说明书短期使用；本模板不内置具体剂量。\n胃肠道出血、机械性梗阻、穿孔、嗜铬细胞瘤、癫痫等禁忌需核对。\n注意锥体外系反应、迟发性运动障碍、嗜睡；儿童/老年需谨慎。"
+  },
+  {
+    "id": "drug-montmorillonite-powder",
+    "generic_cn": "蒙脱石散",
+    "generic_en": "Montmorillonite Powder",
+    "brand_names": [],
+    "aliases": [
+      "蒙脱石"
+    ],
+    "system": "western_medicine",
+    "primary_category": "digestive_system",
+    "secondary_category": "general_digestive",
+    "dosage_forms": [
+      "powder"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/digestive-system/drug-montmorillonite-powder.md",
+    "searchable_text": "蒙脱石散\nmontmorillonite powder\n蒙脱石\nintestinal_adsorbent\n成人及儿童急慢性腹泻辅助治疗；具体以批准说明书为准。\n按批准说明书使用；与其他口服药间隔；本模板不内置具体剂量。\n对本品过敏者禁用；严重便秘/肠梗阻风险需核对。\n可能影响其他药物吸收，需间隔给药；腹泻伴脱水需补液。"
+  },
+  {
+    "id": "drug-omeprazole-capsule",
+    "generic_cn": "奥美拉唑肠溶胶囊",
+    "generic_en": "Omeprazole Delayed-release Capsules",
+    "brand_names": [],
+    "aliases": [
+      "奥美拉唑"
+    ],
+    "system": "western_medicine",
+    "primary_category": "digestive_system",
+    "secondary_category": "general_digestive",
+    "dosage_forms": [
+      "delayed_release_capsule"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/digestive-system/drug-omeprazole-capsule.md",
+    "searchable_text": "奥美拉唑肠溶胶囊\nomeprazole delayed-release capsules\n奥美拉唑\nproton_pump_inhibitor\n胃食管反流病、消化性溃疡、幽门螺杆菌根除方案组成等；具体以批准说明书为准。\n按批准说明书和适应症使用；本模板不内置具体剂量。\n对本品或取代苯并咪唑类过敏者禁用；与某些禁忌相互作用药物合用需核对。\n长期使用注意低镁、骨折、肠道感染、维生素b12等风险；警惕掩盖恶性病变。"
+  },
+  {
+    "id": "drug-ondansetron-tablet",
+    "generic_cn": "昂丹司琼片",
+    "generic_en": "Ondansetron Tablets",
+    "brand_names": [],
+    "aliases": [
+      "昂丹司琼"
+    ],
+    "system": "western_medicine",
+    "primary_category": "digestive_system",
+    "secondary_category": "general_digestive",
+    "dosage_forms": [
+      "tablet",
+      "orally_disintegrating_tablet",
+      "injection"
+    ],
+    "routes": [
+      "oral",
+      "oral",
+      "oral"
+    ],
+    "risk_tags": [
+      "hepatic_adjustment_required",
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/digestive-system/drug-ondansetron-tablet.md",
+    "searchable_text": "昂丹司琼片\nondansetron tablets\n昂丹司琼\n5ht3_receptor_antagonist\n恶心呕吐防治，尤其化疗、放疗、术后相关；具体以批准说明书为准。\n按批准说明书和场景使用；肝功能异常需核对；本模板不内置具体剂量。\n对本品过敏者禁用；与阿扑吗啡合用等禁忌需核对。\n注意qt延长、5-ht综合征、肝功能异常。"
+  },
+  {
+    "id": "drug-pantoprazole-tablet",
+    "generic_cn": "泮托拉唑肠溶片",
+    "generic_en": "Pantoprazole Delayed-release Tablets",
+    "brand_names": [],
+    "aliases": [
+      "泮托拉唑"
+    ],
+    "system": "western_medicine",
+    "primary_category": "digestive_system",
+    "secondary_category": "general_digestive",
+    "dosage_forms": [
+      "delayed_release_tablet"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "interaction_check_required",
+      "hepatic_adjustment_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/digestive-system/drug-pantoprazole-tablet.md",
+    "searchable_text": "泮托拉唑肠溶片\npantoprazole delayed-release tablets\n泮托拉唑\nproton_pump_inhibitor\n胃食管反流病、消化性溃疡等酸相关疾病；具体以批准说明书为准。\n按批准说明书使用；本模板不内置具体剂量。\n对本品或同类药物过敏者禁用。\n长期使用注意低镁、骨折、感染风险；肝功能异常需核对。"
+  },
+  {
+    "id": "drug-acetylcysteine-granule",
+    "generic_cn": "乙酰半胱氨酸颗粒",
+    "generic_en": "Acetylcysteine Granules",
+    "brand_names": [],
+    "aliases": [
+      "N-乙酰半胱氨酸"
+    ],
+    "system": "western_medicine",
+    "primary_category": "respiratory_emergency",
+    "secondary_category": "general_respiratory_emergency",
+    "dosage_forms": [
+      "granule",
+      "solution"
+    ],
+    "routes": [
+      "oral",
+      "oral"
+    ],
+    "risk_tags": [
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/respiratory-emergency/drug-acetylcysteine-granule.md",
+    "searchable_text": "乙酰半胱氨酸颗粒\nacetylcysteine granules\nn-乙酰半胱氨酸\nmucolytic\n痰液黏稠、排痰困难；另有解毒用途制剂需按对应说明书；具体以批准说明书为准。\n按批准说明书使用；本模板不内置具体剂量。\n对本品过敏者禁用；支气管哮喘患者需谨慎。\n注意支气管痉挛、胃肠道反应；不同制剂用途不可混淆。"
+  },
+  {
+    "id": "drug-ambroxol-tablet",
+    "generic_cn": "盐酸氨溴索片",
+    "generic_en": "Ambroxol Hydrochloride Tablets",
+    "brand_names": [],
+    "aliases": [
+      "氨溴索"
+    ],
+    "system": "western_medicine",
+    "primary_category": "respiratory_emergency",
+    "secondary_category": "general_respiratory_emergency",
+    "dosage_forms": [
+      "tablet",
+      "oral_solution"
+    ],
+    "routes": [
+      "oral",
+      "oral"
+    ],
+    "risk_tags": [
+      "renal_adjustment_required",
+      "hepatic_adjustment_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/respiratory-emergency/drug-ambroxol-tablet.md",
+    "searchable_text": "盐酸氨溴索片\nambroxol hydrochloride tablets\n氨溴索\nmucolytic_expectorant\n痰液黏稠、咳痰困难等祛痰治疗；具体以批准说明书为准。\n按批准说明书使用；本模板不内置具体剂量。\n对本品过敏者禁用。\n胃溃疡、肝肾功能异常患者需谨慎；严重皮肤反应罕见需警惕。"
+  },
+  {
+    "id": "drug-budesonide-inhalation-suspension",
+    "generic_cn": "布地奈德吸入混悬液",
+    "generic_en": "Budesonide Inhalation Suspension",
+    "brand_names": [],
+    "aliases": [
+      "布地奈德"
+    ],
+    "system": "western_medicine",
+    "primary_category": "respiratory_emergency",
+    "secondary_category": "general_respiratory_emergency",
+    "dosage_forms": [
+      "nebulizer_suspension"
+    ],
+    "routes": [
+      "inhalation"
+    ],
+    "risk_tags": [
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/respiratory-emergency/drug-budesonide-inhalation-suspension.md",
+    "searchable_text": "布地奈德吸入混悬液\nbudesonide inhalation suspension\n布地奈德\ninhaled_corticosteroid\n哮喘等气道炎症控制治疗；具体适应症以批准说明书为准。\n按批准说明书吸入；使用后漱口；本模板不内置具体剂量。\n对本品过敏者禁用。\n注意口咽念珠菌感染、声音嘶哑、长期激素相关风险；急性支气管痉挛不作单独急救药。"
+  },
+  {
+    "id": "drug-dextromethorphan-tablet",
+    "generic_cn": "右美沙芬片",
+    "generic_en": "Dextromethorphan Tablets",
+    "brand_names": [],
+    "aliases": [
+      "右美沙芬"
+    ],
+    "system": "western_medicine",
+    "primary_category": "respiratory_emergency",
+    "secondary_category": "general_respiratory_emergency",
+    "dosage_forms": [
+      "tablet",
+      "syrup"
+    ],
+    "routes": [
+      "oral",
+      "oral"
+    ],
+    "risk_tags": [
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/respiratory-emergency/drug-dextromethorphan-tablet.md",
+    "searchable_text": "右美沙芬片\ndextromethorphan tablets\n右美沙芬\nantitussive\n干咳对症治疗；具体以批准说明书为准。\n按批准说明书短期使用；本模板不内置具体剂量。\n对本品过敏者禁用；与maoi合用禁忌需核对。\n注意嗜睡、滥用风险、5-ht综合征；痰多咳嗽不宜盲目镇咳。"
+  },
+  {
+    "id": "drug-dopamine-injection",
+    "generic_cn": "多巴胺注射液",
+    "generic_en": "Dopamine Hydrochloride Injection",
+    "brand_names": [],
+    "aliases": [
+      "多巴胺"
+    ],
+    "system": "western_medicine",
+    "primary_category": "respiratory_emergency",
+    "secondary_category": "general_respiratory_emergency",
+    "dosage_forms": [
+      "injection"
+    ],
+    "routes": [
+      "iv_infusion"
+    ],
+    "risk_tags": [
+      "high_alert_drug",
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/respiratory-emergency/drug-dopamine-injection.md",
+    "searchable_text": "多巴胺注射液\ndopamine hydrochloride injection\n多巴胺\nvasopressor_inotrope\n休克、低心排等需要血管活性支持场景；具体适应症以批准说明书为准。\n高警示注射药，需泵入/监测；按说明书和急救流程使用；本模板不内置具体剂量。\n嗜铬细胞瘤、未纠正快速性心律失常等禁忌需核对。\n注意外渗坏死、心律失常、血压过高；需严密监测。"
+  },
+  {
+    "id": "drug-epinephrine-injection",
+    "generic_cn": "肾上腺素注射液",
+    "generic_en": "Epinephrine Injection",
+    "brand_names": [],
+    "aliases": [
+      "肾上腺素"
+    ],
+    "system": "western_medicine",
+    "primary_category": "respiratory_emergency",
+    "secondary_category": "general_respiratory_emergency",
+    "dosage_forms": [
+      "injection"
+    ],
+    "routes": [
+      "im_iv_sc"
+    ],
+    "risk_tags": [
+      "high_alert_drug",
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/respiratory-emergency/drug-epinephrine-injection.md",
+    "searchable_text": "肾上腺素注射液\nepinephrine injection\n肾上腺素\nadrenergic_agonist\n过敏性休克、心脏骤停等急救场景；具体适应症以批准说明书和急救指南为准。\n急救药物，按急救流程和批准说明书使用；本模板不内置具体剂量。\n无绝对禁忌用于危及生命急救时；非急救情况需核对禁忌。\n高警示药品；注意心律失常、高血压、外渗、给药途径和浓度错误。"
+  },
+  {
+    "id": "drug-furosemide-tablet-injection",
+    "generic_cn": "呋塞米片/注射液",
+    "generic_en": "Furosemide Tablets/Injection",
+    "brand_names": [],
+    "aliases": [
+      "呋塞米",
+      "速尿"
+    ],
+    "system": "western_medicine",
+    "primary_category": "respiratory_emergency",
+    "secondary_category": "general_respiratory_emergency",
+    "dosage_forms": [
+      "tablet",
+      "injection"
+    ],
+    "routes": [
+      "oral_iv",
+      "oral_iv"
+    ],
+    "risk_tags": [
+      "renal_adjustment_required",
+      "interaction_check_required",
+      "high_alert_drug"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/respiratory-emergency/drug-furosemide-tablet-injection.md",
+    "searchable_text": "呋塞米片/注射液\nfurosemide tablets/injection\n呋塞米\n速尿\nloop_diuretic\n水肿性疾病、高血压辅助、急性肺水肿等；具体适应症以批准说明书为准。\n按批准说明书和容量状态、电解质、肾功能调整；本模板不内置具体剂量。\n无尿、严重电解质紊乱、对磺胺类过敏等禁忌需核对。\n注意低钾、低钠、脱水、低血压、肾功能恶化、耳毒性。"
+  },
+  {
+    "id": "drug-ipratropium-inhalation-solution",
+    "generic_cn": "异丙托溴铵吸入溶液",
+    "generic_en": "Ipratropium Bromide Inhalation Solution",
+    "brand_names": [],
+    "aliases": [
+      "异丙托溴铵"
+    ],
+    "system": "western_medicine",
+    "primary_category": "respiratory_emergency",
+    "secondary_category": "general_respiratory_emergency",
+    "dosage_forms": [
+      "nebulizer_solution"
+    ],
+    "routes": [
+      "inhalation"
+    ],
+    "risk_tags": [
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/respiratory-emergency/drug-ipratropium-inhalation-solution.md",
+    "searchable_text": "异丙托溴铵吸入溶液\nipratropium bromide inhalation solution\n异丙托溴铵\nshort_acting_muscarinic_antagonist\n慢阻肺、支气管痉挛等辅助治疗；具体以批准说明书为准。\n按批准说明书雾化吸入；避免接触眼睛；本模板不内置具体剂量。\n对阿托品样药物或本品过敏者禁用。\n注意闭角型青光眼、尿潴留、前列腺增生患者风险。"
+  },
+  {
+    "id": "drug-nitroglycerin-tablet",
+    "generic_cn": "硝酸甘油片",
+    "generic_en": "Nitroglycerin Sublingual Tablets",
+    "brand_names": [],
+    "aliases": [
+      "硝酸甘油"
+    ],
+    "system": "western_medicine",
+    "primary_category": "respiratory_emergency",
+    "secondary_category": "general_respiratory_emergency",
+    "dosage_forms": [
+      "sublingual_tablet",
+      "injection"
+    ],
+    "routes": [
+      "sublingual",
+      "sublingual"
+    ],
+    "risk_tags": [
+      "high_alert_drug",
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/respiratory-emergency/drug-nitroglycerin-tablet.md",
+    "searchable_text": "硝酸甘油片\nnitroglycerin sublingual tablets\n硝酸甘油\nnitrate_vasodilator\n心绞痛急性发作缓解及相关场景；具体以批准说明书为准。\n按批准说明书舌下含服/给药；本模板不内置具体剂量。\n与pde5抑制剂合用禁忌；严重低血压、休克等情况需核对。\n注意低血压、头痛、晕厥；使用前核对血压和相互作用。"
+  },
+  {
+    "id": "drug-salbutamol-inhaler",
+    "generic_cn": "沙丁胺醇吸入气雾剂",
+    "generic_en": "Salbutamol/Albuterol Inhalation Aerosol",
+    "brand_names": [],
+    "aliases": [
+      "沙丁胺醇",
+      "Albuterol"
+    ],
+    "system": "western_medicine",
+    "primary_category": "respiratory_emergency",
+    "secondary_category": "general_respiratory_emergency",
+    "dosage_forms": [
+      "inhaler"
+    ],
+    "routes": [
+      "inhalation"
+    ],
+    "risk_tags": [
+      "interaction_check_required",
+      "high_alert_drug"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-19",
+    "version": 1,
+    "path": "drugs/western-medicine/respiratory-emergency/drug-salbutamol-inhaler.md",
+    "searchable_text": "沙丁胺醇吸入气雾剂\nsalbutamol/albuterol inhalation aerosol\n沙丁胺醇\nalbuterol\nshort_acting_beta2_agonist\n支气管哮喘、慢阻肺相关支气管痉挛缓解；具体适应症以批准说明书为准。\n按批准说明书吸入使用；急性重症需按急救流程；本模板不内置具体剂量。\n对本品过敏者禁用；严重心律失常等需谨慎。\n注意心悸、震颤、低钾、反常支气管痉挛；频繁使用提示控制不佳。"
+  }
+]

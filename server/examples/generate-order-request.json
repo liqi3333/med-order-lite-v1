@@ -1,0 +1,12 @@
+{
+  "drugId": "drug-demo-alpha",
+  "diagnosis": "原型测试用途",
+  "scenario": "outpatient",
+  "patientContext": {
+    "allergies": ["示例过敏史"],
+    "renalFunction": "unknown",
+    "hepaticFunction": "unknown",
+    "pregnancy": false,
+    "lactation": false
+  }
+}
