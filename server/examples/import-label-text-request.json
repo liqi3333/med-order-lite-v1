@@ -1,0 +1,21 @@
+{
+  "saveMode": "preview",
+  "actor": "example-user",
+  "basic": {
+    "generic_cn": "示例导入药物",
+    "generic_en": "Example Imported Drug",
+    "brand_names": ["示例商品名"],
+    "aliases": ["示例别名"],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "other_antibacterials",
+    "pharmacologic_class": "示例分类",
+    "prescription_type": "prescription"
+  },
+  "forms": [
+    { "dosage_form": "tablet", "strength": "示例规格", "route": "oral" }
+  ],
+  "risk_tags": ["allergy_check_required"],
+  "source": { "title": "示例导入药物说明书", "source_type": "manual_entry" },
+  "label_text": "【适应症】\n用于原型测试。\n【用法用量】\n请医生根据正式说明书填写。\n【禁忌】\n对本品过敏者禁用。\n【注意事项】\n请医生确认。"
+}

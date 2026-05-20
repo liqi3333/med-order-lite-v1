@@ -1,0 +1,7 @@
+[
+  { "value": "prescription", "label": "处方药" },
+  { "value": "otc_a", "label": "甲类非处方药" },
+  { "value": "otc_b", "label": "乙类非处方药" },
+  { "value": "restricted", "label": "特殊管理药品" },
+  { "value": "unknown", "label": "待确认" }
+]

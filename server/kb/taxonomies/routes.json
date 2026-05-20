@@ -1,0 +1,14 @@
+[
+  { "value": "oral", "label": "口服" },
+  { "value": "intravenous", "label": "静脉给药" },
+  { "value": "intramuscular", "label": "肌内注射" },
+  { "value": "subcutaneous", "label": "皮下注射" },
+  { "value": "topical", "label": "外用" },
+  { "value": "ophthalmic", "label": "眼用" },
+  { "value": "otic", "label": "耳用" },
+  { "value": "nasal", "label": "鼻用" },
+  { "value": "inhalation", "label": "吸入" },
+  { "value": "rectal", "label": "直肠给药" },
+  { "value": "vaginal", "label": "阴道给药" },
+  { "value": "other", "label": "其他" }
+]

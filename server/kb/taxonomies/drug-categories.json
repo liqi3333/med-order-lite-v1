@@ -1,0 +1,1307 @@
+{
+  "systems": [
+    {
+      "value": "western_medicine",
+      "label": "化学药品 / 西药"
+    },
+    {
+      "value": "biologics",
+      "label": "生物制品"
+    },
+    {
+      "value": "chinese_patent_medicine",
+      "label": "中成药"
+    },
+    {
+      "value": "traditional_chinese_medicine_decoction_pieces",
+      "label": "中药饮片"
+    },
+    {
+      "value": "medical_nutrition_and_solutions",
+      "label": "营养支持 / 溶媒 / 补液"
+    },
+    {
+      "value": "diagnostic_agents",
+      "label": "诊断用药 / 造影剂"
+    },
+    {
+      "value": "other",
+      "label": "其他"
+    }
+  ],
+  "categories": [
+    {
+      "value": "anti_infective",
+      "label": "抗感染药",
+      "system": "western_medicine",
+      "children": [
+        {
+          "value": "penicillins",
+          "label": "青霉素类"
+        },
+        {
+          "value": "penicillin_beta_lactamase_inhibitor_combinations",
+          "label": "青霉素类复方 / β-内酰胺酶抑制剂复方"
+        },
+        {
+          "value": "cephalosporins_first_generation",
+          "label": "第一代头孢菌素"
+        },
+        {
+          "value": "cephalosporins_second_generation",
+          "label": "第二代头孢菌素"
+        },
+        {
+          "value": "cephalosporins_third_generation",
+          "label": "第三代头孢菌素"
+        },
+        {
+          "value": "cephalosporins_fourth_generation",
+          "label": "第四代头孢菌素"
+        },
+        {
+          "value": "cephalosporins_fifth_generation",
+          "label": "第五代头孢菌素"
+        },
+        {
+          "value": "carbapenems",
+          "label": "碳青霉烯类"
+        },
+        {
+          "value": "monobactams",
+          "label": "单环 β-内酰胺类"
+        },
+        {
+          "value": "glycopeptides_lipopeptides",
+          "label": "糖肽类 / 脂肽类"
+        },
+        {
+          "value": "aminoglycosides",
+          "label": "氨基糖苷类"
+        },
+        {
+          "value": "macrolides",
+          "label": "大环内酯类"
+        },
+        {
+          "value": "tetracyclines_glycylcyclines",
+          "label": "四环素类 / 甘氨酰环素类"
+        },
+        {
+          "value": "fluoroquinolones",
+          "label": "氟喹诺酮类"
+        },
+        {
+          "value": "sulfonamides_trimethoprim",
+          "label": "磺胺类及甲氧苄啶复方"
+        },
+        {
+          "value": "nitroimidazoles",
+          "label": "硝基咪唑类"
+        },
+        {
+          "value": "oxazolidinones",
+          "label": "噁唑烷酮类"
+        },
+        {
+          "value": "lincosamides",
+          "label": "林可酰胺类"
+        },
+        {
+          "value": "chloramphenicols",
+          "label": "氯霉素类"
+        },
+        {
+          "value": "nitrofurans",
+          "label": "硝基呋喃类"
+        },
+        {
+          "value": "polymyxins",
+          "label": "多黏菌素类"
+        },
+        {
+          "value": "rifamycins",
+          "label": "利福霉素类"
+        },
+        {
+          "value": "antituberculosis_drugs",
+          "label": "抗结核药"
+        },
+        {
+          "value": "antifungal_azoles",
+          "label": "抗真菌药 - 唑类"
+        },
+        {
+          "value": "antifungal_echinocandins",
+          "label": "抗真菌药 - 棘白菌素类"
+        },
+        {
+          "value": "antifungal_polyenes",
+          "label": "抗真菌药 - 多烯类"
+        },
+        {
+          "value": "antiviral_antiherpes",
+          "label": "抗病毒药 - 抗疱疹病毒"
+        },
+        {
+          "value": "antiviral_antiinfluenza",
+          "label": "抗病毒药 - 抗流感病毒"
+        },
+        {
+          "value": "antiviral_hepatitis",
+          "label": "抗病毒药 - 肝炎用药"
+        },
+        {
+          "value": "antiviral_hiv",
+          "label": "抗病毒药 - HIV 用药"
+        },
+        {
+          "value": "antimicrobial_topical",
+          "label": "局部抗感染药"
+        },
+        {
+          "value": "other_antibacterials",
+          "label": "其他抗菌药"
+        }
+      ]
+    },
+    {
+      "value": "antiparasitic",
+      "label": "抗寄生虫病药",
+      "system": "western_medicine",
+      "children": [
+        {
+          "value": "antimalarials",
+          "label": "抗疟药"
+        },
+        {
+          "value": "antiamebic_antitrichomonal",
+          "label": "抗阿米巴病 / 抗滴虫药"
+        },
+        {
+          "value": "anthelmintics",
+          "label": "驱肠虫药"
+        },
+        {
+          "value": "antischistosomals",
+          "label": "抗血吸虫药"
+        },
+        {
+          "value": "antileishmanial_drugs",
+          "label": "抗利什曼原虫药"
+        },
+        {
+          "value": "ectoparasiticides",
+          "label": "抗体外寄生虫药"
+        },
+        {
+          "value": "other_antiparasitic_drugs",
+          "label": "其他抗寄生虫药"
+        }
+      ]
+    },
+    {
+      "value": "cardiovascular",
+      "label": "心血管系统用药",
+      "system": "western_medicine",
+      "children": [
+        {
+          "value": "ace_inhibitors",
+          "label": "ACEI"
+        },
+        {
+          "value": "angiotensin_receptor_blockers",
+          "label": "ARB"
+        },
+        {
+          "value": "angiotensin_receptor_neprilysin_inhibitors",
+          "label": "ARNI"
+        },
+        {
+          "value": "beta_blockers",
+          "label": "β 受体阻滞剂"
+        },
+        {
+          "value": "calcium_channel_blockers_dihydropyridine",
+          "label": "二氢吡啶类钙通道阻滞剂"
+        },
+        {
+          "value": "calcium_channel_blockers_nondihydropyridine",
+          "label": "非二氢吡啶类钙通道阻滞剂"
+        },
+        {
+          "value": "diuretics_loop",
+          "label": "袢利尿剂"
+        },
+        {
+          "value": "diuretics_thiazide",
+          "label": "噻嗪类及类似利尿剂"
+        },
+        {
+          "value": "diuretics_potassium_sparing",
+          "label": "保钾利尿剂"
+        },
+        {
+          "value": "mineralocorticoid_receptor_antagonists",
+          "label": "醛固酮受体拮抗剂"
+        },
+        {
+          "value": "nitrates",
+          "label": "硝酸酯类"
+        },
+        {
+          "value": "antianginal_other",
+          "label": "其他抗心绞痛药"
+        },
+        {
+          "value": "antiarrhythmics_class_i",
+          "label": "抗心律失常药 I 类"
+        },
+        {
+          "value": "antiarrhythmics_class_ii",
+          "label": "抗心律失常药 II 类"
+        },
+        {
+          "value": "antiarrhythmics_class_iii",
+          "label": "抗心律失常药 III 类"
+        },
+        {
+          "value": "antiarrhythmics_class_iv",
+          "label": "抗心律失常药 IV 类"
+        },
+        {
+          "value": "cardiac_glycosides",
+          "label": "强心苷类"
+        },
+        {
+          "value": "vasodilators",
+          "label": "血管扩张药"
+        },
+        {
+          "value": "pulmonary_hypertension_drugs",
+          "label": "肺动脉高压用药"
+        },
+        {
+          "value": "lipid_lowering_statins",
+          "label": "调脂药 - 他汀类"
+        },
+        {
+          "value": "lipid_lowering_fibrates",
+          "label": "调脂药 - 贝特类"
+        },
+        {
+          "value": "lipid_lowering_other",
+          "label": "其他调脂药"
+        },
+        {
+          "value": "heart_failure_sglt2_inhibitors",
+          "label": "心衰相关 SGLT2 抑制剂"
+        },
+        {
+          "value": "other_cardiovascular_drugs",
+          "label": "其他心血管药"
+        }
+      ]
+    },
+    {
+      "value": "blood_and_coagulation",
+      "label": "血液系统与凝血用药",
+      "system": "western_medicine",
+      "children": [
+        {
+          "value": "antiplatelet_drugs",
+          "label": "抗血小板药"
+        },
+        {
+          "value": "anticoagulants_heparins",
+          "label": "抗凝药 - 肝素类"
+        },
+        {
+          "value": "anticoagulants_vitamin_k_antagonists",
+          "label": "抗凝药 - 维生素 K 拮抗剂"
+        },
+        {
+          "value": "anticoagulants_doac",
+          "label": "直接口服抗凝药"
+        },
+        {
+          "value": "thrombolytics",
+          "label": "溶栓药"
+        },
+        {
+          "value": "hemostatics",
+          "label": "止血药"
+        },
+        {
+          "value": "hematopoietic_growth_factors",
+          "label": "造血生长因子"
+        },
+        {
+          "value": "iron_preparations",
+          "label": "铁剂"
+        },
+        {
+          "value": "folate_vitamin_b12",
+          "label": "叶酸 / 维生素 B12"
+        },
+        {
+          "value": "plasma_volume_expanders",
+          "label": "血容量扩充剂"
+        },
+        {
+          "value": "blood_products",
+          "label": "血液制品"
+        },
+        {
+          "value": "other_blood_drugs",
+          "label": "其他血液系统用药"
+        }
+      ]
+    },
+    {
+      "value": "digestive_and_metabolism",
+      "label": "消化系统及代谢用药",
+      "system": "western_medicine",
+      "children": [
+        {
+          "value": "acid_suppressants_ppi",
+          "label": "抑酸药 - 质子泵抑制剂"
+        },
+        {
+          "value": "acid_suppressants_h2_blockers",
+          "label": "抑酸药 - H2 受体阻滞剂"
+        },
+        {
+          "value": "antacids_mucosal_protectants",
+          "label": "抗酸药 / 胃黏膜保护剂"
+        },
+        {
+          "value": "gastroprokinetics",
+          "label": "促胃肠动力药"
+        },
+        {
+          "value": "antiemetics",
+          "label": "止吐药"
+        },
+        {
+          "value": "antidiarrheals",
+          "label": "止泻药"
+        },
+        {
+          "value": "laxatives",
+          "label": "泻药 / 通便药"
+        },
+        {
+          "value": "intestinal_microecologics",
+          "label": "肠道微生态制剂"
+        },
+        {
+          "value": "antispasmodics_gi",
+          "label": "胃肠解痉药"
+        },
+        {
+          "value": "hepatoprotective_drugs",
+          "label": "肝病辅助用药"
+        },
+        {
+          "value": "cholagogues_gallstone_drugs",
+          "label": "利胆 / 胆石症用药"
+        },
+        {
+          "value": "pancreatic_enzyme_preparations",
+          "label": "胰酶制剂"
+        },
+        {
+          "value": "ibd_drugs",
+          "label": "炎症性肠病用药"
+        },
+        {
+          "value": "oral_rehydration_electrolyte_gi",
+          "label": "口服补液及胃肠电解质"
+        },
+        {
+          "value": "other_digestive_drugs",
+          "label": "其他消化系统用药"
+        }
+      ]
+    },
+    {
+      "value": "respiratory",
+      "label": "呼吸系统用药",
+      "system": "western_medicine",
+      "children": [
+        {
+          "value": "bronchodilators_beta2_agonists",
+          "label": "β2 受体激动剂"
+        },
+        {
+          "value": "bronchodilators_anticholinergics",
+          "label": "抗胆碱支气管扩张剂"
+        },
+        {
+          "value": "inhaled_corticosteroids",
+          "label": "吸入糖皮质激素"
+        },
+        {
+          "value": "ics_laba_combinations",
+          "label": "ICS / LABA 复方"
+        },
+        {
+          "value": "laba_lama_combinations",
+          "label": "LABA / LAMA 复方"
+        },
+        {
+          "value": "leukotriene_receptor_antagonists",
+          "label": "白三烯受体拮抗剂"
+        },
+        {
+          "value": "mucolytics_expectorants",
+          "label": "祛痰 / 黏液溶解药"
+        },
+        {
+          "value": "antitussives",
+          "label": "镇咳药"
+        },
+        {
+          "value": "nasal_decongestants",
+          "label": "鼻减充血剂"
+        },
+        {
+          "value": "antihistamines_respiratory",
+          "label": "抗组胺药"
+        },
+        {
+          "value": "respiratory_emergency_drugs",
+          "label": "呼吸急救用药"
+        },
+        {
+          "value": "other_respiratory_drugs",
+          "label": "其他呼吸系统用药"
+        }
+      ]
+    },
+    {
+      "value": "nervous_system",
+      "label": "神经系统与精神科用药",
+      "system": "western_medicine",
+      "children": [
+        {
+          "value": "analgesics_nonopioid",
+          "label": "非阿片类镇痛药"
+        },
+        {
+          "value": "opioid_analgesics",
+          "label": "阿片类镇痛药"
+        },
+        {
+          "value": "antimigraine_drugs",
+          "label": "抗偏头痛药"
+        },
+        {
+          "value": "antiepileptics",
+          "label": "抗癫痫药"
+        },
+        {
+          "value": "antiparkinson_drugs",
+          "label": "抗帕金森病药"
+        },
+        {
+          "value": "antipsychotics",
+          "label": "抗精神病药"
+        },
+        {
+          "value": "antidepressants_ssri_snri",
+          "label": "抗抑郁药 - SSRI / SNRI"
+        },
+        {
+          "value": "antidepressants_other",
+          "label": "其他抗抑郁药"
+        },
+        {
+          "value": "anxiolytics_hypnotics",
+          "label": "抗焦虑 / 镇静催眠药"
+        },
+        {
+          "value": "dementia_drugs",
+          "label": "认知障碍用药"
+        },
+        {
+          "value": "neuromuscular_drugs",
+          "label": "神经肌肉疾病用药"
+        },
+        {
+          "value": "vertigo_drugs",
+          "label": "眩晕用药"
+        },
+        {
+          "value": "other_nervous_system_drugs",
+          "label": "其他神经系统用药"
+        }
+      ]
+    },
+    {
+      "value": "endocrine_and_metabolism",
+      "label": "内分泌、代谢及激素类药",
+      "system": "western_medicine",
+      "children": [
+        {
+          "value": "insulins",
+          "label": "胰岛素及类似物"
+        },
+        {
+          "value": "oral_antidiabetics_biguanides",
+          "label": "降糖药 - 双胍类"
+        },
+        {
+          "value": "oral_antidiabetics_sulfonylureas",
+          "label": "降糖药 - 磺脲类"
+        },
+        {
+          "value": "oral_antidiabetics_dpp4_inhibitors",
+          "label": "降糖药 - DPP-4 抑制剂"
+        },
+        {
+          "value": "oral_antidiabetics_sglt2_inhibitors",
+          "label": "降糖药 - SGLT2 抑制剂"
+        },
+        {
+          "value": "glp1_receptor_agonists",
+          "label": "GLP-1 受体激动剂"
+        },
+        {
+          "value": "thyroid_hormones",
+          "label": "甲状腺激素类"
+        },
+        {
+          "value": "antithyroid_drugs",
+          "label": "抗甲状腺药"
+        },
+        {
+          "value": "systemic_corticosteroids",
+          "label": "全身用糖皮质激素"
+        },
+        {
+          "value": "adrenal_hormone_related",
+          "label": "肾上腺相关激素药"
+        },
+        {
+          "value": "sex_hormones_estrogens_progestins",
+          "label": "雌激素 / 孕激素类"
+        },
+        {
+          "value": "androgens_antiandrogens",
+          "label": "雄激素 / 抗雄激素药"
+        },
+        {
+          "value": "osteoporosis_drugs",
+          "label": "骨质疏松用药"
+        },
+        {
+          "value": "gout_hyperuricemia_drugs",
+          "label": "痛风 / 高尿酸血症用药"
+        },
+        {
+          "value": "other_endocrine_metabolic_drugs",
+          "label": "其他内分泌代谢药"
+        }
+      ]
+    },
+    {
+      "value": "musculoskeletal_and_antiinflammatory",
+      "label": "肌肉骨骼系统与抗炎镇痛药",
+      "system": "western_medicine",
+      "children": [
+        {
+          "value": "nsaids_nonselective",
+          "label": "非选择性 NSAIDs"
+        },
+        {
+          "value": "nsaids_cox2_selective",
+          "label": "COX-2 选择性 NSAIDs"
+        },
+        {
+          "value": "antirheumatic_dmards",
+          "label": "传统改善病情抗风湿药"
+        },
+        {
+          "value": "biologic_dmards",
+          "label": "生物制剂类抗风湿药"
+        },
+        {
+          "value": "muscle_relaxants",
+          "label": "肌松药 / 骨骼肌松弛药"
+        },
+        {
+          "value": "topical_analgesic_antiinflammatory",
+          "label": "外用镇痛抗炎药"
+        },
+        {
+          "value": "osteoarthritis_symptomatic_drugs",
+          "label": "骨关节炎症状改善药"
+        },
+        {
+          "value": "other_musculoskeletal_drugs",
+          "label": "其他肌肉骨骼用药"
+        }
+      ]
+    },
+    {
+      "value": "genitourinary_and_sex_hormones",
+      "label": "泌尿生殖系统与性激素相关用药",
+      "system": "western_medicine",
+      "children": [
+        {
+          "value": "bph_drugs_alpha_blockers",
+          "label": "前列腺增生用药 - α 受体阻滞剂"
+        },
+        {
+          "value": "bph_drugs_5alpha_reductase_inhibitors",
+          "label": "前列腺增生用药 - 5α 还原酶抑制剂"
+        },
+        {
+          "value": "overactive_bladder_drugs",
+          "label": "膀胱过度活动症用药"
+        },
+        {
+          "value": "erectile_dysfunction_drugs",
+          "label": "勃起功能障碍用药"
+        },
+        {
+          "value": "contraceptives",
+          "label": "避孕药"
+        },
+        {
+          "value": "uterotonics",
+          "label": "子宫收缩药"
+        },
+        {
+          "value": "tocolytics",
+          "label": "抑制宫缩药"
+        },
+        {
+          "value": "vaginal_antiinfectives",
+          "label": "阴道抗感染药"
+        },
+        {
+          "value": "other_genitourinary_drugs",
+          "label": "其他泌尿生殖系统用药"
+        }
+      ]
+    },
+    {
+      "value": "dermatological",
+      "label": "皮肤科用药",
+      "system": "western_medicine",
+      "children": [
+        {
+          "value": "topical_antibacterials",
+          "label": "外用抗菌药"
+        },
+        {
+          "value": "topical_antifungals",
+          "label": "外用抗真菌药"
+        },
+        {
+          "value": "topical_corticosteroids",
+          "label": "外用糖皮质激素"
+        },
+        {
+          "value": "topical_antivirals",
+          "label": "外用抗病毒药"
+        },
+        {
+          "value": "acne_drugs",
+          "label": "痤疮用药"
+        },
+        {
+          "value": "psoriasis_drugs",
+          "label": "银屑病用药"
+        },
+        {
+          "value": "skin_antiseptics_disinfectants",
+          "label": "皮肤消毒防腐药"
+        },
+        {
+          "value": "wound_care_drugs",
+          "label": "创面处理用药"
+        },
+        {
+          "value": "other_dermatological_drugs",
+          "label": "其他皮肤科用药"
+        }
+      ]
+    },
+    {
+      "value": "sensory_organs",
+      "label": "眼科、耳鼻喉及感觉器官用药",
+      "system": "western_medicine",
+      "children": [
+        {
+          "value": "ophthalmic_antibiotics",
+          "label": "眼用抗菌药"
+        },
+        {
+          "value": "ophthalmic_antivirals",
+          "label": "眼用抗病毒药"
+        },
+        {
+          "value": "ophthalmic_corticosteroids",
+          "label": "眼用糖皮质激素"
+        },
+        {
+          "value": "ophthalmic_antiallergics",
+          "label": "眼用抗过敏药"
+        },
+        {
+          "value": "glaucoma_drugs",
+          "label": "青光眼用药"
+        },
+        {
+          "value": "artificial_tears_lubricants",
+          "label": "人工泪液 / 眼润滑剂"
+        },
+        {
+          "value": "otic_antiinfectives",
+          "label": "耳用抗感染药"
+        },
+        {
+          "value": "nasal_corticosteroids",
+          "label": "鼻用糖皮质激素"
+        },
+        {
+          "value": "ent_other_drugs",
+          "label": "其他耳鼻喉用药"
+        }
+      ]
+    },
+    {
+      "value": "antineoplastic_and_immunomodulating",
+      "label": "抗肿瘤与免疫调节药",
+      "system": "western_medicine",
+      "children": [
+        {
+          "value": "alkylating_agents",
+          "label": "烷化剂"
+        },
+        {
+          "value": "antimetabolites",
+          "label": "抗代谢药"
+        },
+        {
+          "value": "plant_alkaloids_taxanes",
+          "label": "植物来源抗肿瘤药 / 紫杉类"
+        },
+        {
+          "value": "platinum_compounds",
+          "label": "铂类"
+        },
+        {
+          "value": "anthracyclines_other_cytotoxics",
+          "label": "蒽环类及其他细胞毒药"
+        },
+        {
+          "value": "targeted_therapy_tki",
+          "label": "靶向治疗 - 酪氨酸激酶抑制剂"
+        },
+        {
+          "value": "targeted_therapy_monoclonal_antibodies",
+          "label": "靶向治疗 - 单克隆抗体"
+        },
+        {
+          "value": "immune_checkpoint_inhibitors",
+          "label": "免疫检查点抑制剂"
+        },
+        {
+          "value": "endocrine_antineoplastic_drugs",
+          "label": "肿瘤内分泌治疗药"
+        },
+        {
+          "value": "immunosuppressants",
+          "label": "免疫抑制剂"
+        },
+        {
+          "value": "immunostimulants",
+          "label": "免疫增强剂"
+        },
+        {
+          "value": "other_antineoplastic_immunomodulating_drugs",
+          "label": "其他抗肿瘤及免疫调节药"
+        }
+      ]
+    },
+    {
+      "value": "anesthesia_and_perioperative",
+      "label": "麻醉、镇静及围手术期用药",
+      "system": "western_medicine",
+      "children": [
+        {
+          "value": "general_anesthetics_inhaled",
+          "label": "吸入全麻药"
+        },
+        {
+          "value": "general_anesthetics_intravenous",
+          "label": "静脉全麻药"
+        },
+        {
+          "value": "local_anesthetics",
+          "label": "局部麻醉药"
+        },
+        {
+          "value": "neuromuscular_blockers",
+          "label": "神经肌肉阻滞药"
+        },
+        {
+          "value": "neuromuscular_blocker_reversal_agents",
+          "label": "肌松拮抗药"
+        },
+        {
+          "value": "perioperative_sedatives",
+          "label": "围手术期镇静药"
+        },
+        {
+          "value": "perioperative_analgesics",
+          "label": "围手术期镇痛药"
+        },
+        {
+          "value": "other_anesthesia_drugs",
+          "label": "其他麻醉相关用药"
+        }
+      ]
+    },
+    {
+      "value": "emergency_and_critical_care",
+      "label": "急救与危重症用药",
+      "system": "western_medicine",
+      "children": [
+        {
+          "value": "vasopressors_inotropes",
+          "label": "血管活性药 / 正性肌力药"
+        },
+        {
+          "value": "resuscitation_drugs",
+          "label": "心肺复苏相关用药"
+        },
+        {
+          "value": "antidotes",
+          "label": "解毒药"
+        },
+        {
+          "value": "electrolyte_emergency_drugs",
+          "label": "急诊电解质纠正用药"
+        },
+        {
+          "value": "critical_care_sedation_analgesia",
+          "label": "ICU 镇静镇痛药"
+        },
+        {
+          "value": "critical_care_anticoagulation",
+          "label": "ICU 抗凝相关用药"
+        },
+        {
+          "value": "emergency_antihypertensives",
+          "label": "急症降压药"
+        },
+        {
+          "value": "emergency_antiallergic_drugs",
+          "label": "过敏反应急救药"
+        },
+        {
+          "value": "other_emergency_drugs",
+          "label": "其他急救用药"
+        }
+      ]
+    },
+    {
+      "value": "nutrition_electrolytes_and_vitamins",
+      "label": "营养、电解质、补液与维生素矿物质",
+      "system": "western_medicine",
+      "children": [
+        {
+          "value": "crystalloids",
+          "label": "晶体液 / 基础输液"
+        },
+        {
+          "value": "electrolyte_supplements",
+          "label": "电解质补充剂"
+        },
+        {
+          "value": "acid_base_balance_drugs",
+          "label": "酸碱平衡调节药"
+        },
+        {
+          "value": "parenteral_nutrition",
+          "label": "肠外营养药"
+        },
+        {
+          "value": "enteral_nutrition",
+          "label": "肠内营养制剂"
+        },
+        {
+          "value": "vitamins",
+          "label": "维生素类"
+        },
+        {
+          "value": "minerals_trace_elements",
+          "label": "矿物质 / 微量元素"
+        },
+        {
+          "value": "other_nutrition_drugs",
+          "label": "其他营养支持药"
+        }
+      ]
+    },
+    {
+      "value": "diagnostic_and_contrast_agents",
+      "label": "诊断用药、造影剂及辅助检查用药",
+      "system": "western_medicine",
+      "children": [
+        {
+          "value": "iodinated_contrast_media",
+          "label": "碘造影剂"
+        },
+        {
+          "value": "gadolinium_contrast_media",
+          "label": "钆类磁共振造影剂"
+        },
+        {
+          "value": "ultrasound_contrast_agents",
+          "label": "超声造影剂"
+        },
+        {
+          "value": "diagnostic_test_agents",
+          "label": "诊断试验用药"
+        },
+        {
+          "value": "bowel_preparation_agents",
+          "label": "肠道准备药"
+        },
+        {
+          "value": "other_diagnostic_agents",
+          "label": "其他诊断用药"
+        }
+      ]
+    },
+    {
+      "value": "vaccines",
+      "label": "疫苗",
+      "system": "biologics",
+      "children": [
+        {
+          "value": "viral_vaccines",
+          "label": "病毒疫苗"
+        },
+        {
+          "value": "bacterial_vaccines",
+          "label": "细菌疫苗"
+        },
+        {
+          "value": "combined_vaccines",
+          "label": "联合疫苗"
+        }
+      ]
+    },
+    {
+      "value": "blood_products_biologics",
+      "label": "血液制品",
+      "system": "biologics",
+      "children": [
+        {
+          "value": "human_albumin",
+          "label": "人血白蛋白"
+        },
+        {
+          "value": "immunoglobulins",
+          "label": "免疫球蛋白"
+        },
+        {
+          "value": "coagulation_factors",
+          "label": "凝血因子制品"
+        }
+      ]
+    },
+    {
+      "value": "therapeutic_antibodies",
+      "label": "治疗性抗体",
+      "system": "biologics",
+      "children": [
+        {
+          "value": "antitumor_monoclonal_antibodies",
+          "label": "抗肿瘤单克隆抗体"
+        },
+        {
+          "value": "immune_disease_monoclonal_antibodies",
+          "label": "免疫炎症疾病单克隆抗体"
+        }
+      ]
+    },
+    {
+      "value": "cytokines_growth_factors",
+      "label": "细胞因子 / 生长因子",
+      "system": "biologics",
+      "children": [
+        {
+          "value": "interferons",
+          "label": "干扰素"
+        },
+        {
+          "value": "colony_stimulating_factors",
+          "label": "集落刺激因子"
+        },
+        {
+          "value": "erythropoiesis_stimulating_agents",
+          "label": "促红细胞生成素类"
+        }
+      ]
+    },
+    {
+      "value": "insulin_biologics",
+      "label": "胰岛素及类似物",
+      "system": "biologics",
+      "children": [
+        {
+          "value": "human_insulin",
+          "label": "人胰岛素"
+        },
+        {
+          "value": "insulin_analogs",
+          "label": "胰岛素类似物"
+        }
+      ]
+    },
+    {
+      "value": "cp_respiratory",
+      "label": "呼吸系统中成药",
+      "system": "chinese_patent_medicine",
+      "children": [
+        {
+          "value": "cp_cough_expectorant",
+          "label": "止咳化痰"
+        },
+        {
+          "value": "cp_cold_fever",
+          "label": "感冒发热"
+        },
+        {
+          "value": "cp_asthma_wheeze",
+          "label": "平喘"
+        }
+      ]
+    },
+    {
+      "value": "cp_digestive",
+      "label": "消化系统中成药",
+      "system": "chinese_patent_medicine",
+      "children": [
+        {
+          "value": "cp_stomach_pain",
+          "label": "胃痛胃胀"
+        },
+        {
+          "value": "cp_diarrhea",
+          "label": "泄泻"
+        },
+        {
+          "value": "cp_liver_gallbladder",
+          "label": "肝胆用药"
+        }
+      ]
+    },
+    {
+      "value": "cp_cardiovascular",
+      "label": "心脑血管中成药",
+      "system": "chinese_patent_medicine",
+      "children": [
+        {
+          "value": "cp_angina_chest_pain",
+          "label": "胸痹心痛"
+        },
+        {
+          "value": "cp_stroke_sequelae",
+          "label": "中风及后遗症"
+        },
+        {
+          "value": "cp_blood_activating",
+          "label": "活血化瘀"
+        }
+      ]
+    },
+    {
+      "value": "cp_musculoskeletal",
+      "label": "骨伤风湿中成药",
+      "system": "chinese_patent_medicine",
+      "children": [
+        {
+          "value": "cp_rheumatism_pain",
+          "label": "风湿痹痛"
+        },
+        {
+          "value": "cp_trauma_injury",
+          "label": "跌打损伤"
+        }
+      ]
+    },
+    {
+      "value": "cp_gynecology",
+      "label": "妇科中成药",
+      "system": "chinese_patent_medicine",
+      "children": [
+        {
+          "value": "cp_menstrual_disorders",
+          "label": "月经不调"
+        },
+        {
+          "value": "cp_leukorrhea",
+          "label": "带下病"
+        }
+      ]
+    },
+    {
+      "value": "cp_pediatrics",
+      "label": "儿科中成药",
+      "system": "chinese_patent_medicine",
+      "children": [
+        {
+          "value": "cp_pediatric_cold",
+          "label": "小儿感冒"
+        },
+        {
+          "value": "cp_pediatric_digestive",
+          "label": "小儿消化"
+        }
+      ]
+    },
+    {
+      "value": "cp_ent_dermatology",
+      "label": "五官皮肤中成药",
+      "system": "chinese_patent_medicine",
+      "children": [
+        {
+          "value": "cp_throat_oral",
+          "label": "咽喉口腔"
+        },
+        {
+          "value": "cp_skin_itching",
+          "label": "皮肤瘙痒"
+        }
+      ]
+    },
+    {
+      "value": "cp_tonic",
+      "label": "补益类中成药",
+      "system": "chinese_patent_medicine",
+      "children": [
+        {
+          "value": "cp_qi_tonifying",
+          "label": "补气"
+        },
+        {
+          "value": "cp_blood_tonifying",
+          "label": "补血"
+        },
+        {
+          "value": "cp_yin_yang_tonifying",
+          "label": "补阴补阳"
+        }
+      ]
+    },
+    {
+      "value": "cp_other",
+      "label": "其他中成药",
+      "system": "chinese_patent_medicine",
+      "children": [
+        {
+          "value": "cp_uncategorized",
+          "label": "其他未归类"
+        }
+      ]
+    },
+    {
+      "value": "tcm_decoction_general",
+      "label": "中药饮片通用分类",
+      "system": "traditional_chinese_medicine_decoction_pieces",
+      "children": [
+        {
+          "value": "tcm_decoction_pieces",
+          "label": "中药饮片"
+        },
+        {
+          "value": "tcm_formula_granules",
+          "label": "中药配方颗粒"
+        },
+        {
+          "value": "tcm_other",
+          "label": "其他中药相关"
+        }
+      ]
+    },
+    {
+      "value": "medical_nutrition",
+      "label": "医学营养支持",
+      "system": "medical_nutrition_and_solutions",
+      "children": [
+        {
+          "value": "enteral_nutrition",
+          "label": "肠内营养"
+        },
+        {
+          "value": "parenteral_nutrition",
+          "label": "肠外营养"
+        },
+        {
+          "value": "crystalloids",
+          "label": "晶体液 / 基础输液"
+        },
+        {
+          "value": "electrolyte_supplements",
+          "label": "电解质补充剂"
+        },
+        {
+          "value": "solvents_diluents",
+          "label": "溶媒 / 稀释液"
+        }
+      ]
+    },
+    {
+      "value": "diagnostic_agents_general",
+      "label": "诊断用药 / 造影剂",
+      "system": "diagnostic_agents",
+      "children": [
+        {
+          "value": "iodinated_contrast_media",
+          "label": "碘造影剂"
+        },
+        {
+          "value": "gadolinium_contrast_media",
+          "label": "钆类磁共振造影剂"
+        },
+        {
+          "value": "ultrasound_contrast_agents",
+          "label": "超声造影剂"
+        },
+        {
+          "value": "diagnostic_test_agents",
+          "label": "诊断试验用药"
+        },
+        {
+          "value": "other_diagnostic_agents",
+          "label": "其他诊断用药"
+        }
+      ]
+    },
+    {
+      "value": "other_uncategorized",
+      "label": "其他",
+      "system": "other",
+      "children": [
+        {
+          "value": "uncategorized",
+          "label": "未归类"
+        },
+        {
+          "value": "local_special_use",
+          "label": "院内特殊用药"
+        }
+      ]
+    }
+  ]
+}

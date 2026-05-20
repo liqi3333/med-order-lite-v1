@@ -1,0 +1,24 @@
+{
+  "name": "med-order-lite",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev-all.mjs",
+    "dev:web": "node scripts/static-web.mjs",
+    "dev:api": "npm run dev --prefix server",
+    "start:api": "npm start --prefix server",
+    "compile:web": "tsc -p tsconfig.web.json",
+    "compile:api": "npm run compile --prefix server",
+    "compile:all": "npm run compile:web && npm run compile:api",
+    "typecheck": "tsc -p tsconfig.web.json --noEmit",
+    "validate:drugs": "npm run validate:drugs --prefix server",
+    "build:drug-index": "npm run build:drug-index --prefix server",
+    "build:indexes": "npm run build:indexes --prefix server",
+    "build:public-snapshot": "npm run build:public-snapshot --prefix server",
+    "smoke:test": "npm run smoke:test --prefix server",
+    "build:all": "npm run compile:all && npm run build:indexes && npm run build:public-snapshot"
+  },
+  "devDependencies": { "typescript": "^5.8.3" },
+  "description": "Lite drug information and candidate order generation web app."
+}

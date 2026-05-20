@@ -1,0 +1,20 @@
+[
+  { "value": "tablet", "label": "片剂" },
+  { "value": "capsule", "label": "胶囊剂" },
+  { "value": "granule", "label": "颗粒剂" },
+  { "value": "powder", "label": "散剂/粉剂" },
+  { "value": "oral_solution", "label": "口服溶液剂" },
+  { "value": "syrup", "label": "糖浆剂" },
+  { "value": "injection", "label": "注射剂" },
+  { "value": "infusion", "label": "输液剂" },
+  { "value": "cream", "label": "乳膏剂" },
+  { "value": "ointment", "label": "软膏剂" },
+  { "value": "gel", "label": "凝胶剂" },
+  { "value": "patch", "label": "贴剂" },
+  { "value": "eye_drop", "label": "滴眼剂" },
+  { "value": "ear_drop", "label": "滴耳剂" },
+  { "value": "nasal_spray", "label": "鼻喷剂" },
+  { "value": "inhalation", "label": "吸入制剂" },
+  { "value": "suppository", "label": "栓剂" },
+  { "value": "other", "label": "其他" }
+]

@@ -1,0 +1,17 @@
+{
+  "name": "临床医嘱助手 Prototype",
+  "short_name": "医嘱助手",
+  "description": "供临床医生查询疾病、药物并生成候选医嘱模板的 PWA 原型。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0f766e",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
