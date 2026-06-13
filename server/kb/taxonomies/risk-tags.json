@@ -1,0 +1,14 @@
+[
+  { "value": "allergy_check_required", "label": "需要过敏史校验" },
+  { "value": "renal_adjustment_required", "label": "需要肾功能校验/调整" },
+  { "value": "hepatic_adjustment_required", "label": "需要肝功能校验/调整" },
+  { "value": "pregnancy_check_required", "label": "需要妊娠/哺乳校验" },
+  { "value": "interaction_check_required", "label": "需要相互作用校验" },
+  { "value": "high_alert", "label": "高警示药品" },
+  { "value": "antimicrobial", "label": "抗菌药物" },
+  { "value": "narcotic", "label": "麻醉药品" },
+  { "value": "psychotropic", "label": "精神药品" },
+  { "value": "toxic_drug", "label": "医疗用毒性药品" },
+  { "value": "cold_chain", "label": "需冷链" },
+  { "value": "protect_from_light", "label": "需避光" }
+]

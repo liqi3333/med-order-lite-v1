@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Drug Markdown Frontmatter",
+  "type": "object",
+  "required": ["id", "type", "names", "classification", "forms", "risk_tags", "sources", "review"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^drug-[a-z0-9\\u4e00-\\u9fa5-]+$" },
+    "type": { "const": "drug" },
+    "names": {
+      "type": "object",
+      "required": ["generic_cn"],
+      "properties": {
+        "generic_cn": { "type": "string" },
+        "generic_en": { "type": "string" },
+        "brand_names": { "type": "array", "items": { "type": "string" } },
+        "aliases": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "classification": {
+      "type": "object",
+      "required": ["system", "primary_category"],
+      "properties": {
+        "system": { "type": "string" },
+        "primary_category": { "type": "string" },
+        "secondary_category": { "type": "string" },
+        "pharmacologic_class": { "type": "string" },
+        "atc_code": { "type": "string" },
+        "prescription_type": { "type": "string" }
+      }
+    },
+    "forms": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["dosage_form", "route"],
+        "properties": {
+          "dosage_form": { "type": "string" },
+          "strength": { "type": "string" },
+          "route": { "type": "string" },
+          "package_unit": { "type": "string" },
+          "manufacturer": { "type": "string" },
+          "approval_number": { "type": "string" }
+        }
+      }
+    },
+    "risk_tags": { "type": "array", "items": { "type": "string" } },
+    "sources": { "type": "array" },
+    "review": {
+      "type": "object",
+      "required": ["review_status", "lifecycle", "updated_at", "version"],
+      "properties": {
+        "review_status": { "enum": ["draft", "pending", "approved", "rejected"] },
+        "lifecycle": { "enum": ["active", "inactive", "deprecated"] },
+        "created_by": { "type": "string" },
+        "reviewed_by": { "type": "string" },
+        "reviewed_at": { "type": "string" },
+        "updated_at": { "type": "string" },
+        "version": { "type": "integer", "minimum": 1 }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "med-order-lite-api",
+  "version": "0.3.0",
+  "description": "Lite backend API for drug information import, local markdown drug library, and candidate order generation.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "compile": "tsc -p tsconfig.json",
+    "start": "node dist/src/server.js",
+    "dev": "npm run compile && node dist/src/server.js",
+    "validate:drugs": "npm run compile && node dist/scripts/validate-drugs.js",
+    "build:drug-index": "npm run compile && node dist/scripts/build-drug-index.js",
+    "build:indexes": "npm run compile && node dist/scripts/build-indexes.js",
+    "build:public-snapshot": "npm run compile && node dist/scripts/build-public-snapshot.js",
+    "smoke:test": "npm run compile && node dist/scripts/smoke-test.js",
+    "test": "node --import tsx --test \"src/**/*.test.ts\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.22.4",
+    "typescript": "^5.8.3"
+  }
+}

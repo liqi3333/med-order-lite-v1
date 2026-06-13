@@ -1,0 +1,544 @@
+[
+  {
+    "id": "drug-阿格司亭",
+    "generic_cn": "阿格司亭",
+    "brand_names": [],
+    "aliases": [],
+    "system": "biologics",
+    "primary_category": "cytokines_growth_factors",
+    "secondary_category": "colony_stimulating_factors",
+    "dosage_forms": [
+      "injection"
+    ],
+    "routes": [
+      "subcutaneous"
+    ],
+    "risk_tags": [],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-25",
+    "version": 1,
+    "path": "drugs/biologics/cytokines-growth-factors/drug-阿格司亭.md",
+    "searchable_text": "阿格司亭\n适用于成年非髓性恶性肿瘤患者在接受容易引起发热性中性粒细胞减少症（fn）的骨髓抑制性抗癌药物治疗时，降低以发热性中性粒细胞减少症为表现的感染发生率。\n\n* *注：本品不适用于造血干细胞移植的外周血祖细胞（pbpc）的动员。*\n本品仅限**皮下注射**，严禁静脉注射。\n每个化疗周期仅需单次给药。推荐单次使用剂量为 **500 μg/kg**（依据患者实际体重计算）。\n\n* **给药时机：** 应在每个化疗周期抗肿瘤细胞毒性化疗药物给药结束后第3天（即化疗结束后48小时以后）皮下注射。\n* **时间禁忌：** 严禁在细胞毒性化疗药物给药前14天内，以及化疗结束后24小时内给予本品。\n1. 对阿格司亭α、重组人粒细胞集落刺激因子类制品、人血清白蛋白或本品中任何辅料过敏者禁用。\n2. 骨髓中幼稚粒细胞未显著减少的骨髓性白血病患者，或外周血中检出幼稚粒细胞的骨髓性白血病患者禁用。\n1. **脾脏并发症：** 使用本品后如出现左上腹疼痛或肩部疼痛，应高度警惕并及时评估是否发生脾肿大或脾破裂。\n2. **血常规监测：** 用药期间应定期监测血常规，特别是中性粒细胞绝对计数（anc）和白细胞计数（wbc）。如白细胞计数超过 50 × 10⁹/l，应及时由医生评估并采取相关措施。\n3. **急性呼吸窘迫综合征（ards）：** 接受g-csf治疗的患者中曾有报告发生ards，如出现发热、肺部浸润、呼吸困难等呼吸道症状，应密切监测并由医生进行鉴别诊断。\n4. **骨显像干扰：** 骨髓造血活性增加会导致一过性骨扫描增强，在解释骨扫描结果时应予以考虑。"
+  },
+  {
+    "id": "drug-康艾注射液",
+    "generic_cn": "康艾注射液",
+    "brand_names": [],
+    "aliases": [],
+    "system": "chinese_patent_medicine",
+    "primary_category": "cp_other",
+    "secondary_category": "cp_uncategorized",
+    "dosage_forms": [
+      "injection"
+    ],
+    "routes": [
+      "intravenous"
+    ],
+    "risk_tags": [],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-25",
+    "version": 2,
+    "path": "drugs/chinese-patent-medicine/cp-other/drug-康艾注射液.md",
+    "searchable_text": "康艾注射液\n益气扶正，消癥散结。用于原发性肝癌、肺癌、直章癌、恶性淋巴瘤、妇科恶性肿瘤；各种原因引起的白细胞低下及减少症；亦可用于慢性乙型肝炎的治疗。在肿瘤化疗、放疗期间配合使用，有稳定白细胞、提高免疫功能、改善临床症状的作用。\n\n【规格】\n每支装 10ml、20ml。\n本品仅限静脉滴注。\n剂量：一次 40ml 到 60ml，一日 1 次。\n配制方法：临用时，用 5% 葡萄糖注射液或 0.9% 氯化钠注射液 250ml 到 500ml 稀释后使用。\n疗程：30 日为一疗程，或遵医嘱。\n1. 对本品或含有黄芪、人参、苦参素成份制剂过敏或有严重不良反应病史者禁用。\n1. 临床监护：本品不良反应包括过敏性休克，应在具备抢救条件的医疗机构使用。用药后前 30 分钟应密切观察，一旦出现过敏症状，应立即停药并抢救。\n2. 特殊人群：肝肾功能异常、高血压、心脏病患者使用前需由医生严格评估。\n3. 配制规范：严格按规定稀释，不可与其他药物在同一容器内混合配伍。输注速度不宜过快（建议控制在每分钟 40 到 60 滴）。\n4. 药液检查：输注前应仔细检查，药液如出现浑浊、沉淀、变色或漏气，严禁使用。"
+  },
+  {
+    "id": "drug-cefazolin-sodium-injection",
+    "generic_cn": "注射用头孢唑林钠",
+    "generic_en": "Cefazolin Sodium for Injection",
+    "brand_names": [],
+    "aliases": [
+      "头孢唑林钠",
+      "Cefazolin Injection",
+      "Cefazolin Sodium Injection"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "cephalosporins_first_generation",
+    "dosage_forms": [
+      "injection",
+      "injection"
+    ],
+    "routes": [
+      "intravenous",
+      "intramuscular"
+    ],
+    "risk_tags": [
+      "allergy_check_required",
+      "renal_adjustment_required",
+      "pregnancy_check_required",
+      "interaction_check_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-20",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-cefazolin-sodium-injection.md",
+    "searchable_text": "注射用头孢唑林钠\ncefazolin sodium for injection\n头孢唑林钠\ncefazolin injection\ncefazolin sodium injection\nfirst_generation_cephalosporin\n适用于敏感菌所致呼吸道、泌尿生殖道、皮肤软组织、骨关节、胆道等感染，也常用于围手术期预防感染；不适用于中枢神经系统感染。具体适应症以本地批准说明书为准。\n成人常用剂量多为 0.5–1 g 每 6–8 小时一次，静脉或肌内给药；严重感染可按说明书和本院抗菌药物管理要求增加剂量。围手术期预防用药常在切皮前 30–60 分钟给药，术中是否追加及术后是否继续需按手术类型、体重、肾功能和本院制度执行。\n\n儿童通常按体重分次给药；新生儿、早产儿、肾功能不全患者需由医生/药师按正式说明书进行剂量调整。候选医嘱生成时不得直接套用本段剂量，必须核对本院制剂说明书、感染部位、病原学和肾功能。\n1. 对头孢唑林钠、其他头孢菌素类药物或处方中任一成分有过敏史者禁用。\n2. 既往发生β-内酰胺类严重速发型过敏反应者，应严格评估交叉过敏风险。\n3. 具体禁忌、相对禁忌和特殊制剂禁忌以本地批准说明书为准。\n1. 用药前应询问头孢菌素、青霉素、碳青霉烯类及其他药物过敏史，备好过敏反应抢救措施。\n2. 本品属于抗菌药物，应根据感染部位、病原学、药敏结果、感染严重程度和本院抗菌药物分级管理制度使用。\n3. 长疗程或联合用药时应监测血常规、肝肾功能；出现严重腹泻需警惕艰难梭菌相关性腹泻。\n4. 肾功能不全患者需重点评估剂量和给药间隔；老年患者常需根据肾功能调整。\n5. 配制后溶液稳定性、可用溶媒、输注浓度、滴注时间、与其他药物配伍禁忌均以本地说明书和本院静配规范为准。"
+  },
+  {
+    "id": "drug-cefodizime-sodium-injection",
+    "generic_cn": "注射用头孢地嗪钠",
+    "generic_en": "Cefodizime Sodium for Injection",
+    "brand_names": [],
+    "aliases": [
+      "头孢地嗪钠",
+      "Cefodizime Injection"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "cephalosporins_third_generation",
+    "dosage_forms": [
+      "injection",
+      "injection"
+    ],
+    "routes": [
+      "intravenous",
+      "intramuscular"
+    ],
+    "risk_tags": [
+      "allergy_check_required",
+      "renal_adjustment_required",
+      "pregnancy_check_required",
+      "interaction_check_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-20",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-cefodizime-sodium-injection.md",
+    "searchable_text": "注射用头孢地嗪钠\ncefodizime sodium for injection\n头孢地嗪钠\ncefodizime injection\nthird_generation_cephalosporin\n适用于敏感菌所致上下呼吸道、泌尿道、皮肤软组织、胆道、腹腔、生殖道等感染；具体适应症以本地说明书为准。\n成人常用剂量多为每日 1–2 g，静脉或肌内给药；较重感染可按说明书增加剂量并分次给药。儿童按体重给药。\n\n具体给药频次、最大日剂量和疗程差异较大，必须以本地批准说明书和药敏结果为准。肾功能不全时需调整剂量。\n1. 对头孢地嗪钠、其他头孢菌素类药物或处方中任一成分有过敏史者禁用。\n2. 既往发生β-内酰胺类严重速发型过敏反应者，应严格评估交叉过敏风险。\n3. 具体禁忌、相对禁忌和特殊制剂禁忌以本地批准说明书为准。\n1. 用药前应询问头孢菌素、青霉素、碳青霉烯类及其他药物过敏史，备好过敏反应抢救措施。\n2. 本品属于抗菌药物，应根据感染部位、病原学、药敏结果、感染严重程度和本院抗菌药物分级管理制度使用。\n3. 长疗程或联合用药时应监测血常规、肝肾功能；出现严重腹泻需警惕艰难梭菌相关性腹泻。\n4. 肾功能不全患者需重点评估剂量和给药间隔；老年患者常需根据肾功能调整。\n5. 配制后溶液稳定性、可用溶媒、输注浓度、滴注时间、与其他药物配伍禁忌均以本地说明书和本院静配规范为准。"
+  },
+  {
+    "id": "drug-cefoperazone-sodium-injection",
+    "generic_cn": "注射用头孢哌酮钠",
+    "generic_en": "Cefoperazone Sodium for Injection",
+    "brand_names": [],
+    "aliases": [
+      "头孢哌酮钠",
+      "Cefoperazone Injection"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "cephalosporins_third_generation",
+    "dosage_forms": [
+      "injection",
+      "injection"
+    ],
+    "routes": [
+      "intravenous",
+      "intramuscular"
+    ],
+    "risk_tags": [
+      "allergy_check_required",
+      "renal_adjustment_required",
+      "pregnancy_check_required",
+      "interaction_check_required",
+      "antimicrobial",
+      "hepatic_adjustment_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-20",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-cefoperazone-sodium-injection.md",
+    "searchable_text": "注射用头孢哌酮钠\ncefoperazone sodium for injection\n头孢哌酮钠\ncefoperazone injection\nthird_generation_cephalosporin_with_biliary_excretion\n适用于敏感菌所致呼吸道、泌尿道、腹腔、胆道、盆腔、皮肤软组织、败血症等感染；对部分革兰阴性菌有活性，具体以药敏和本地说明书为准。\n成人常用剂量多为每日 2–4 g，分 2 次静脉给药；严重感染可按说明书增加剂量。儿童按体重分次给药。\n\n肝胆疾病、胆道梗阻、严重肾肝功能不全或营养不良患者应加强凝血功能和维生素 k 相关风险监测。候选医嘱中应提示避免饮酒和含乙醇制剂。\n1. 对头孢哌酮钠、其他头孢菌素类药物或处方中任一成分有过敏史者禁用。\n2. 既往发生β-内酰胺类严重速发型过敏反应者，应严格评估交叉过敏风险。\n3. 具体禁忌、相对禁忌和特殊制剂禁忌以本地批准说明书为准。\n1. 用药前应询问头孢菌素、青霉素、碳青霉烯类及其他药物过敏史，备好过敏反应抢救措施。\n2. 本品属于抗菌药物，应根据感染部位、病原学、药敏结果、感染严重程度和本院抗菌药物分级管理制度使用。\n3. 长疗程或联合用药时应监测血常规、肝肾功能；出现严重腹泻需警惕艰难梭菌相关性腹泻。\n4. 肾功能不全患者需重点评估剂量和给药间隔；老年患者常需根据肾功能调整。\n5. 配制后溶液稳定性、可用溶媒、输注浓度、滴注时间、与其他药物配伍禁忌均以本地说明书和本院静配规范为准。\n含 n-甲基硫四唑样侧链相关风险：可出现低凝血酶原血症、出血倾向及双硫仑样反应；用药期间及停药后一段时间避免饮酒。"
+  },
+  {
+    "id": "drug-cefotaxime-sodium-injection",
+    "generic_cn": "注射用头孢噻肟钠",
+    "generic_en": "Cefotaxime Sodium for Injection",
+    "brand_names": [],
+    "aliases": [
+      "头孢噻肟钠",
+      "Cefotaxime Injection",
+      "Claforan"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "cephalosporins_third_generation",
+    "dosage_forms": [
+      "injection",
+      "injection"
+    ],
+    "routes": [
+      "intravenous",
+      "intramuscular"
+    ],
+    "risk_tags": [
+      "allergy_check_required",
+      "renal_adjustment_required",
+      "pregnancy_check_required",
+      "interaction_check_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-20",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-cefotaxime-sodium-injection.md",
+    "searchable_text": "注射用头孢噻肟钠\ncefotaxime sodium for injection\n头孢噻肟钠\ncefotaxime injection\nclaforan\nthird_generation_cephalosporin\n适用于敏感菌所致呼吸道、泌尿道、腹腔、盆腔、皮肤软组织、骨关节、败血症、脑膜炎等感染；具体适应症以本地说明书为准。\n成人常用剂量根据感染严重程度从 1 g 每 12 小时到 2 g 每 4–8 小时不等；严重感染或脑膜炎可按说明书增加至最大日剂量范围。儿童和新生儿按体重及日龄分次给药。\n\n肾功能不全时需按肌酐清除率调整。用于脑膜炎、败血症等重症感染时须结合病原学、药敏和指南。\n1. 对头孢噻肟钠、其他头孢菌素类药物或处方中任一成分有过敏史者禁用。\n2. 既往发生β-内酰胺类严重速发型过敏反应者，应严格评估交叉过敏风险。\n3. 具体禁忌、相对禁忌和特殊制剂禁忌以本地批准说明书为准。\n1. 用药前应询问头孢菌素、青霉素、碳青霉烯类及其他药物过敏史，备好过敏反应抢救措施。\n2. 本品属于抗菌药物，应根据感染部位、病原学、药敏结果、感染严重程度和本院抗菌药物分级管理制度使用。\n3. 长疗程或联合用药时应监测血常规、肝肾功能；出现严重腹泻需警惕艰难梭菌相关性腹泻。\n4. 肾功能不全患者需重点评估剂量和给药间隔；老年患者常需根据肾功能调整。\n5. 配制后溶液稳定性、可用溶媒、输注浓度、滴注时间、与其他药物配伍禁忌均以本地说明书和本院静配规范为准。"
+  },
+  {
+    "id": "drug-cefotiam-hydrochloride-injection",
+    "generic_cn": "注射用盐酸头孢替安",
+    "generic_en": "Cefotiam Hydrochloride for Injection",
+    "brand_names": [],
+    "aliases": [
+      "头孢替安",
+      "Cefotiam Injection"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "cephalosporins_second_generation",
+    "dosage_forms": [
+      "injection",
+      "injection"
+    ],
+    "routes": [
+      "intravenous",
+      "intramuscular"
+    ],
+    "risk_tags": [
+      "allergy_check_required",
+      "renal_adjustment_required",
+      "pregnancy_check_required",
+      "interaction_check_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-20",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-cefotiam-hydrochloride-injection.md",
+    "searchable_text": "注射用盐酸头孢替安\ncefotiam hydrochloride for injection\n头孢替安\ncefotiam injection\nsecond_generation_cephalosporin\n适用于敏感菌所致呼吸道、胆道、泌尿生殖道、腹腔、皮肤软组织、败血症、术后感染等；不覆盖铜绿假单胞菌，具体以药敏和本地说明书为准。\n成人常用剂量通常按每日 1–2 g 分 2–4 次静脉给药；严重感染可按说明书和药敏结果增加剂量。儿童按体重分次给药。\n\n具体剂量、稀释方法、滴注时间和最大日剂量必须以本地说明书为准。肾功能不全患者需调整剂量。\n1. 对盐酸头孢替安、其他头孢菌素类药物或处方中任一成分有过敏史者禁用。\n2. 既往发生β-内酰胺类严重速发型过敏反应者，应严格评估交叉过敏风险。\n3. 具体禁忌、相对禁忌和特殊制剂禁忌以本地批准说明书为准。\n1. 用药前应询问头孢菌素、青霉素、碳青霉烯类及其他药物过敏史，备好过敏反应抢救措施。\n2. 本品属于抗菌药物，应根据感染部位、病原学、药敏结果、感染严重程度和本院抗菌药物分级管理制度使用。\n3. 长疗程或联合用药时应监测血常规、肝肾功能；出现严重腹泻需警惕艰难梭菌相关性腹泻。\n4. 肾功能不全患者需重点评估剂量和给药间隔；老年患者常需根据肾功能调整。\n5. 配制后溶液稳定性、可用溶媒、输注浓度、滴注时间、与其他药物配伍禁忌均以本地说明书和本院静配规范为准。"
+  },
+  {
+    "id": "drug-cefoxitin-sodium-injection",
+    "generic_cn": "注射用头孢西丁钠",
+    "generic_en": "Cefoxitin Sodium for Injection",
+    "brand_names": [],
+    "aliases": [
+      "头孢西丁钠",
+      "Cefoxitin Injection",
+      "Mefoxin"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "cephalosporins_second_generation",
+    "dosage_forms": [
+      "injection",
+      "injection"
+    ],
+    "routes": [
+      "intravenous",
+      "intramuscular"
+    ],
+    "risk_tags": [
+      "allergy_check_required",
+      "renal_adjustment_required",
+      "pregnancy_check_required",
+      "interaction_check_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-20",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-cefoxitin-sodium-injection.md",
+    "searchable_text": "注射用头孢西丁钠\ncefoxitin sodium for injection\n头孢西丁钠\ncefoxitin injection\nmefoxin\ncephamycin_second_generation_cephalosporin\n适用于敏感菌所致下呼吸道、泌尿道、腹腔、妇科、皮肤软组织、骨关节感染及围手术期预防；对部分厌氧菌有活性，具体以药敏和本地说明书为准。\n成人常用剂量多为 1–2 g 每 6–8 小时一次，静脉给药；严重感染和腹腔/盆腔感染可按说明书调整。围手术期预防常在术前给药，是否追加按手术时长和失血情况决定。\n\n儿童按体重分次给药。肾功能不全患者需按肌酐清除率调整剂量。给药方案应结合厌氧菌覆盖需求和本院抗菌药物分级管理。\n1. 对头孢西丁钠、其他头孢菌素类药物或处方中任一成分有过敏史者禁用。\n2. 既往发生β-内酰胺类严重速发型过敏反应者，应严格评估交叉过敏风险。\n3. 具体禁忌、相对禁忌和特殊制剂禁忌以本地批准说明书为准。\n1. 用药前应询问头孢菌素、青霉素、碳青霉烯类及其他药物过敏史，备好过敏反应抢救措施。\n2. 本品属于抗菌药物，应根据感染部位、病原学、药敏结果、感染严重程度和本院抗菌药物分级管理制度使用。\n3. 长疗程或联合用药时应监测血常规、肝肾功能；出现严重腹泻需警惕艰难梭菌相关性腹泻。\n4. 肾功能不全患者需重点评估剂量和给药间隔；老年患者常需根据肾功能调整。\n5. 配制后溶液稳定性、可用溶媒、输注浓度、滴注时间、与其他药物配伍禁忌均以本地说明书和本院静配规范为准。"
+  },
+  {
+    "id": "drug-ceftazidime-injection",
+    "generic_cn": "注射用头孢他啶",
+    "generic_en": "Ceftazidime for Injection",
+    "brand_names": [],
+    "aliases": [
+      "头孢他啶",
+      "Ceftazidime Injection",
+      "Fortaz"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "cephalosporins_third_generation",
+    "dosage_forms": [
+      "injection",
+      "injection"
+    ],
+    "routes": [
+      "intravenous",
+      "intramuscular"
+    ],
+    "risk_tags": [
+      "allergy_check_required",
+      "renal_adjustment_required",
+      "pregnancy_check_required",
+      "interaction_check_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-20",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-ceftazidime-injection.md",
+    "searchable_text": "注射用头孢他啶\nceftazidime for injection\n头孢他啶\nceftazidime injection\nfortaz\nthird_generation_antipseudomonal_cephalosporin\n适用于敏感革兰阴性菌感染，尤其包括铜绿假单胞菌相关感染；可用于下呼吸道、泌尿道、皮肤软组织、骨关节、腹腔、败血症、脑膜炎等，具体以说明书和药敏结果为准。\n成人常用剂量多为 1–2 g 每 8–12 小时一次，静脉给药；疑似或确诊铜绿假单胞菌感染、重症感染可按说明书使用 2 g 每 8 小时等方案。儿童按体重分次给药。\n\n肾功能不全时必须调整剂量，以降低神经毒性和蓄积风险。用于耐药革兰阴性菌感染时应结合药敏结果。\n1. 对头孢他啶、其他头孢菌素类药物或处方中任一成分有过敏史者禁用。\n2. 既往发生β-内酰胺类严重速发型过敏反应者，应严格评估交叉过敏风险。\n3. 具体禁忌、相对禁忌和特殊制剂禁忌以本地批准说明书为准。\n1. 用药前应询问头孢菌素、青霉素、碳青霉烯类及其他药物过敏史，备好过敏反应抢救措施。\n2. 本品属于抗菌药物，应根据感染部位、病原学、药敏结果、感染严重程度和本院抗菌药物分级管理制度使用。\n3. 长疗程或联合用药时应监测血常规、肝肾功能；出现严重腹泻需警惕艰难梭菌相关性腹泻。\n4. 肾功能不全患者需重点评估剂量和给药间隔；老年患者常需根据肾功能调整。\n5. 配制后溶液稳定性、可用溶媒、输注浓度、滴注时间、与其他药物配伍禁忌均以本地说明书和本院静配规范为准。"
+  },
+  {
+    "id": "drug-ceftizoxime-sodium-injection",
+    "generic_cn": "注射用头孢唑肟钠",
+    "generic_en": "Ceftizoxime Sodium for Injection",
+    "brand_names": [],
+    "aliases": [
+      "头孢唑肟钠",
+      "Ceftizoxime Injection",
+      "Cefizox"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "cephalosporins_third_generation",
+    "dosage_forms": [
+      "injection",
+      "injection"
+    ],
+    "routes": [
+      "intravenous",
+      "intramuscular"
+    ],
+    "risk_tags": [
+      "allergy_check_required",
+      "renal_adjustment_required",
+      "pregnancy_check_required",
+      "interaction_check_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-20",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-ceftizoxime-sodium-injection.md",
+    "searchable_text": "注射用头孢唑肟钠\nceftizoxime sodium for injection\n头孢唑肟钠\nceftizoxime injection\ncefizox\nthird_generation_cephalosporin\n适用于敏感菌所致呼吸道、泌尿道、腹腔、妇科、皮肤软组织、骨关节、败血症等感染；具体以本地说明书和药敏结果为准。\n成人常用剂量多为 1–2 g 每 8–12 小时一次，静脉或肌内给药；严重感染可按说明书增加剂量。儿童按体重分次给药。\n\n肾功能不全患者需调整剂量。部分国家/地区该品种上市状态不同，导入后必须按本地批准说明书核对。\n1. 对头孢唑肟钠、其他头孢菌素类药物或处方中任一成分有过敏史者禁用。\n2. 既往发生β-内酰胺类严重速发型过敏反应者，应严格评估交叉过敏风险。\n3. 具体禁忌、相对禁忌和特殊制剂禁忌以本地批准说明书为准。\n1. 用药前应询问头孢菌素、青霉素、碳青霉烯类及其他药物过敏史，备好过敏反应抢救措施。\n2. 本品属于抗菌药物，应根据感染部位、病原学、药敏结果、感染严重程度和本院抗菌药物分级管理制度使用。\n3. 长疗程或联合用药时应监测血常规、肝肾功能；出现严重腹泻需警惕艰难梭菌相关性腹泻。\n4. 肾功能不全患者需重点评估剂量和给药间隔；老年患者常需根据肾功能调整。\n5. 配制后溶液稳定性、可用溶媒、输注浓度、滴注时间、与其他药物配伍禁忌均以本地说明书和本院静配规范为准。"
+  },
+  {
+    "id": "drug-ceftriaxone-sodium-injection",
+    "generic_cn": "注射用头孢曲松钠",
+    "generic_en": "Ceftriaxone Sodium for Injection",
+    "brand_names": [],
+    "aliases": [
+      "头孢曲松钠",
+      "Ceftriaxone Injection",
+      "Rocephin"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "cephalosporins_third_generation",
+    "dosage_forms": [
+      "injection",
+      "injection"
+    ],
+    "routes": [
+      "intravenous",
+      "intramuscular"
+    ],
+    "risk_tags": [
+      "allergy_check_required",
+      "renal_adjustment_required",
+      "pregnancy_check_required",
+      "interaction_check_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-20",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-ceftriaxone-sodium-injection.md",
+    "searchable_text": "注射用头孢曲松钠\nceftriaxone sodium for injection\n头孢曲松钠\nceftriaxone injection\nrocephin\nthird_generation_cephalosporin\n适用于敏感菌所致下呼吸道、泌尿道、腹腔、骨关节、皮肤软组织、盆腔、败血症、脑膜炎、淋病等感染，也可用于部分围手术期预防；具体适应症以本地说明书为准。\n成人常用剂量多为 1–2 g 每日一次，或按感染严重程度分次给药；重症感染、脑膜炎等可按说明书使用更高剂量，通常不超过说明书规定最大日剂量。儿童按体重给药，新生儿需特别谨慎。\n\n禁止在新生儿中与含钙静脉制剂同用或近时序使用；成人也应避免与含钙溶液同瓶混合。候选医嘱生成时必须显示钙制剂和新生儿禁忌提醒。\n1. 对头孢曲松钠、其他头孢菌素类药物或处方中任一成分有过敏史者禁用。\n2. 既往发生β-内酰胺类严重速发型过敏反应者，应严格评估交叉过敏风险。\n3. 具体禁忌、相对禁忌和特殊制剂禁忌以本地批准说明书为准。\n1. 用药前应询问头孢菌素、青霉素、碳青霉烯类及其他药物过敏史，备好过敏反应抢救措施。\n2. 本品属于抗菌药物，应根据感染部位、病原学、药敏结果、感染严重程度和本院抗菌药物分级管理制度使用。\n3. 长疗程或联合用药时应监测血常规、肝肾功能；出现严重腹泻需警惕艰难梭菌相关性腹泻。\n4. 肾功能不全患者需重点评估剂量和给药间隔；老年患者常需根据肾功能调整。\n5. 配制后溶液稳定性、可用溶媒、输注浓度、滴注时间、与其他药物配伍禁忌均以本地说明书和本院静配规范为准。\n重点注意新生儿高胆红素血症风险、胆泥/胆石样沉积、与含钙制剂形成沉淀风险。"
+  },
+  {
+    "id": "drug-cefuroxime-sodium-injection",
+    "generic_cn": "注射用头孢呋辛钠",
+    "generic_en": "Cefuroxime Sodium for Injection",
+    "brand_names": [],
+    "aliases": [
+      "头孢呋辛钠",
+      "Zinacef",
+      "Cefuroxime Injection"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "cephalosporins_second_generation",
+    "dosage_forms": [
+      "injection",
+      "injection"
+    ],
+    "routes": [
+      "intravenous",
+      "intramuscular"
+    ],
+    "risk_tags": [
+      "allergy_check_required",
+      "renal_adjustment_required",
+      "pregnancy_check_required",
+      "interaction_check_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-20",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-cefuroxime-sodium-injection.md",
+    "searchable_text": "注射用头孢呋辛钠\ncefuroxime sodium for injection\n头孢呋辛钠\nzinacef\ncefuroxime injection\nsecond_generation_cephalosporin\n适用于敏感菌所致呼吸道、泌尿道、皮肤软组织、骨关节、妇科感染、败血症等感染，也可用于围手术期预防；具体适应症以本地说明书为准。\n成人常用剂量多为 0.75 g 每 8 小时一次，静脉或肌内给药；较重感染可使用 1.5 g 每 8 小时一次。围手术期预防用药常按手术类型给药，术中追加和术后疗程按本院制度执行。\n\n儿童按体重分次给药；肾功能不全患者需调整剂量或给药间隔。候选医嘱生成时应结合感染部位、病原菌、肾功能和本地说明书。\n1. 对头孢呋辛钠、其他头孢菌素类药物或处方中任一成分有过敏史者禁用。\n2. 既往发生β-内酰胺类严重速发型过敏反应者，应严格评估交叉过敏风险。\n3. 具体禁忌、相对禁忌和特殊制剂禁忌以本地批准说明书为准。\n1. 用药前应询问头孢菌素、青霉素、碳青霉烯类及其他药物过敏史，备好过敏反应抢救措施。\n2. 本品属于抗菌药物，应根据感染部位、病原学、药敏结果、感染严重程度和本院抗菌药物分级管理制度使用。\n3. 长疗程或联合用药时应监测血常规、肝肾功能；出现严重腹泻需警惕艰难梭菌相关性腹泻。\n4. 肾功能不全患者需重点评估剂量和给药间隔；老年患者常需根据肾功能调整。\n5. 配制后溶液稳定性、可用溶媒、输注浓度、滴注时间、与其他药物配伍禁忌均以本地说明书和本院静配规范为准。"
+  },
+  {
+    "id": "drug-cephalothin-sodium-injection",
+    "generic_cn": "注射用头孢噻吩钠",
+    "generic_en": "Cephalothin Sodium for Injection",
+    "brand_names": [],
+    "aliases": [
+      "头孢噻吩钠",
+      "Cephalothin Injection"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "cephalosporins_first_generation",
+    "dosage_forms": [
+      "injection",
+      "injection"
+    ],
+    "routes": [
+      "intravenous",
+      "intramuscular"
+    ],
+    "risk_tags": [
+      "allergy_check_required",
+      "renal_adjustment_required",
+      "pregnancy_check_required",
+      "interaction_check_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-20",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-cephalothin-sodium-injection.md",
+    "searchable_text": "注射用头孢噻吩钠\ncephalothin sodium for injection\n头孢噻吩钠\ncephalothin injection\nfirst_generation_cephalosporin\n适用于敏感葡萄球菌、链球菌以及部分革兰阴性菌所致感染，如呼吸道、皮肤软组织、泌尿道、骨关节等感染；具体适应症以本地说明书为准。\n成人常用剂量多为 0.5–2 g 每 4–6 小时一次，静脉给药为主；感染严重程度、病原菌敏感性和肾功能决定具体剂量。儿童按体重分次给药。\n\n该品种部分地区使用较少或已被其他一代头孢替代，导入后请重点核对本院是否仍在采购、批准规格、适应症和用法用量。肾功能不全时需按说明书调整。\n1. 对头孢噻吩钠、其他头孢菌素类药物或处方中任一成分有过敏史者禁用。\n2. 既往发生β-内酰胺类严重速发型过敏反应者，应严格评估交叉过敏风险。\n3. 具体禁忌、相对禁忌和特殊制剂禁忌以本地批准说明书为准。\n1. 用药前应询问头孢菌素、青霉素、碳青霉烯类及其他药物过敏史，备好过敏反应抢救措施。\n2. 本品属于抗菌药物，应根据感染部位、病原学、药敏结果、感染严重程度和本院抗菌药物分级管理制度使用。\n3. 长疗程或联合用药时应监测血常规、肝肾功能；出现严重腹泻需警惕艰难梭菌相关性腹泻。\n4. 肾功能不全患者需重点评估剂量和给药间隔；老年患者常需根据肾功能调整。\n5. 配制后溶液稳定性、可用溶媒、输注浓度、滴注时间、与其他药物配伍禁忌均以本地说明书和本院静配规范为准。"
+  },
+  {
+    "id": "drug-cephradine-injection",
+    "generic_cn": "注射用头孢拉定",
+    "generic_en": "Cephradine for Injection",
+    "brand_names": [],
+    "aliases": [
+      "头孢拉定",
+      "Cefradine Injection",
+      "Cephradine Injection"
+    ],
+    "system": "western_medicine",
+    "primary_category": "anti_infective",
+    "secondary_category": "cephalosporins_first_generation",
+    "dosage_forms": [
+      "injection",
+      "injection"
+    ],
+    "routes": [
+      "intravenous",
+      "intramuscular"
+    ],
+    "risk_tags": [
+      "allergy_check_required",
+      "renal_adjustment_required",
+      "pregnancy_check_required",
+      "interaction_check_required",
+      "antimicrobial"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-20",
+    "version": 1,
+    "path": "drugs/western-medicine/anti-infective/drug-cephradine-injection.md",
+    "searchable_text": "注射用头孢拉定\ncephradine for injection\n头孢拉定\ncefradine injection\ncephradine injection\nfirst_generation_cephalosporin\n适用于敏感菌所致呼吸道、泌尿道、皮肤软组织等感染；具体适应症和适用菌种以本地批准说明书为准。\n成人常用剂量多为 0.5–1 g 每 6 小时一次，静脉或肌内给药；严重感染可按说明书增加剂量。儿童按体重分次给药。\n\n需根据感染部位、病原菌敏感性、年龄体重和肾功能调整。若本地说明书仅批准特定给药途径或规格，应以本地说明书为准。\n1. 对头孢拉定、其他头孢菌素类药物或处方中任一成分有过敏史者禁用。\n2. 既往发生β-内酰胺类严重速发型过敏反应者，应严格评估交叉过敏风险。\n3. 具体禁忌、相对禁忌和特殊制剂禁忌以本地批准说明书为准。\n1. 用药前应询问头孢菌素、青霉素、碳青霉烯类及其他药物过敏史，备好过敏反应抢救措施。\n2. 本品属于抗菌药物，应根据感染部位、病原学、药敏结果、感染严重程度和本院抗菌药物分级管理制度使用。\n3. 长疗程或联合用药时应监测血常规、肝肾功能；出现严重腹泻需警惕艰难梭菌相关性腹泻。\n4. 肾功能不全患者需重点评估剂量和给药间隔；老年患者常需根据肾功能调整。\n5. 配制后溶液稳定性、可用溶媒、输注浓度、滴注时间、与其他药物配伍禁忌均以本地说明书和本院静配规范为准。"
+  },
+  {
+    "id": "drug-地舒单抗注射液",
+    "generic_cn": "地舒单抗注射液",
+    "brand_names": [],
+    "aliases": [],
+    "system": "western_medicine",
+    "primary_category": "endocrine_and_metabolism",
+    "secondary_category": "osteoporosis_drugs",
+    "dosage_forms": [
+      "injection"
+    ],
+    "routes": [
+      "subcutaneous"
+    ],
+    "risk_tags": [],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-25",
+    "version": 2,
+    "path": "drugs/western-medicine/endocrine-and-metabolism/drug-地舒单抗注射液.md",
+    "searchable_text": "地舒单抗注射液\n用于骨折高风险的绝经后妇女的骨质疏松症。\n在绝经后妇女中，本品可显著降低椎体、非椎体和髋部骨折的风险。\n本品推荐剂量为 60 mg，单次皮下注射，每 6 个月给药一次。注射部位为大腿、腹部或上臂部。\n患者必须充分补充钙和维生素 d。\n尚未确定接受骨质疏松症抗骨吸收治疗（包括地舒单抗和双膦酸盐）的最佳总治疗时间。应基于个体患者的风险获益比，定期评估是否需要继续治疗，尤其是接受 5 年及以上治疗后。\n肾功能损害患者不需要调整剂量，但需结合低钙血症风险进行钙监测。\n尚未在肝功能损害患者中研究地舒单抗的安全性和有效性。\n老年患者（年龄 ≥65 岁）不需要调整剂量。\n给药途径为皮下给药，应由医务人员实施。给药前应检查溶液；如含有颗粒、浑浊或变色，请勿注射。本品禁止摇晃。为避免注射部位不适，应在注射前使预充式注射器达到室温（最高 25°c），并缓慢注射。应注射预充式注射器中的全部药液。未使用药品或废弃物应按当地规定处理。由于未开展相容性研究，本品禁止与其他药品混合。\n对活性成份或任何辅料成份过敏者禁用。\n低钙血症患者禁用。\n1. 补充钙和维生素 d：对于所有患者，摄入足够的钙和维生素 d 至关重要。\n2. 低钙血症：开始治疗前必须通过摄入足够的钙和维生素 d 来纠正低钙血症。推荐在每次给药前，以及在易于出现低钙血症的患者首次给药后 2 周内进行钙水平临床监测。如治疗期间出现低钙血症疑似症状，应测定钙水平。糖皮质激素合并治疗也是导致低钙血症的额外危险因素。"
+  },
+  {
+    "id": "drug-demo-gamma",
+    "generic_cn": "示例补液制剂 Gamma",
+    "generic_en": "",
+    "brand_names": [
+      "Gamma 示例溶液"
+    ],
+    "aliases": [
+      "Gamma"
+    ],
+    "system": "western_medicine",
+    "primary_category": "nutrition_electrolytes_and_vitamins",
+    "secondary_category": "crystalloids",
+    "dosage_forms": [
+      "oral_solution"
+    ],
+    "routes": [
+      "other"
+    ],
+    "risk_tags": [
+      "renal_adjustment_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-20",
+    "version": 1,
+    "path": "drugs/western-medicine/nutrition-electrolytes-and-vitamins/drug-demo-gamma.md",
+    "searchable_text": "示例补液制剂 gamma\ngamma 示例溶液\ngamma\nprototype_fluid_electrolyte_support_demo\n用于演示支持治疗模板，不代表真实治疗方案。\n由医生根据正式说明书、患者条件和本院规范填写。原型数据不可用于真实临床。\n具体禁忌需根据正式说明书维护。\n电解质、容量状态和基础疾病需人工评估。"
+  },
+  {
+    "id": "drug-demo-beta",
+    "generic_cn": "示例药物 Beta",
+    "generic_en": "",
+    "brand_names": [
+      "Beta 示例胶囊"
+    ],
+    "aliases": [
+      "Beta"
+    ],
+    "system": "western_medicine",
+    "primary_category": "respiratory",
+    "secondary_category": "antitussives",
+    "dosage_forms": [
+      "capsule"
+    ],
+    "routes": [
+      "oral"
+    ],
+    "risk_tags": [
+      "allergy_check_required",
+      "interaction_check_required"
+    ],
+    "review_status": "approved",
+    "lifecycle": "active",
+    "updated_at": "2026-05-20",
+    "version": 1,
+    "path": "drugs/western-medicine/respiratory/drug-demo-beta.md",
+    "searchable_text": "示例药物 beta\nbeta 示例胶囊\nbeta\nprototype_respiratory_symptomatic_demo\n说明书适应症字段示例：用于演示药品详情页。\n由医生根据正式说明书、患者条件和本院规范填写。原型数据不可用于真实临床。\n对本品过敏者禁用。\n需结合患者年龄、体重、合并用药和器官功能调整。"
+  }
+]

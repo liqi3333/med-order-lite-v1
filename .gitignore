@@ -1,0 +1,20 @@
+node_modules/
+server/node_modules/
+
+# Build output
+dist/
+server/dist/
+
+# Environment
+.env
+server/.env
+
+# Lock files (regenerate from scratch)
+package-lock.json
+server/package-lock.json
+
+# OS
+.DS_Store
+
+# Logs
+*.log

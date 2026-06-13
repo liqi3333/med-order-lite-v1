@@ -1,0 +1,11 @@
+[
+  { "value": "qd", "label": "每日一次" },
+  { "value": "bid", "label": "每日两次" },
+  { "value": "tid", "label": "每日三次" },
+  { "value": "qid", "label": "每日四次" },
+  { "value": "qod", "label": "隔日一次" },
+  { "value": "qn", "label": "每晚一次" },
+  { "value": "prn", "label": "必要时" },
+  { "value": "stat", "label": "立即" },
+  { "value": "custom", "label": "自定义" }
+]
