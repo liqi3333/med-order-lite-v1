@@ -1,6 +1,6 @@
 {
   "name": "med-order-lite",
-  "version": "0.3.0",
+  "version": "0.6.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -20,6 +20,8 @@
     "test": "npm test --prefix server",
     "build:all": "npm run compile:all && npm run build:indexes && npm run build:public-snapshot"
   },
-  "devDependencies": { "typescript": "^5.8.3" },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
   "description": "Lite drug information and candidate order generation web app."
 }
