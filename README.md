@@ -613,35 +613,19 @@ docs/classification-migration-report.md              分类迁移记录
 
 ---
 
-## 16. GitHub / 版本管理建议
-
-建议提交：
+## 16. GitHub
 
 ```txt
-src/
-server/src/
-server/kb/drugs/
-server/kb/taxonomies/
-server/kb/indexes/
-docs/
-README.md
-REQUIREMENTS.md
-package.json
-server/package.json
+仓库地址：https://github.com/liqi3333/med-order-lite-v1
+默认分支：main
 ```
 
-不要提交：
+克隆：
 
-```txt
-node_modules/
-server/node_modules/
-dist/ 如果你希望用户本地重新编译
-server/dist/ 如果你希望用户本地重新编译
-.env
-*.log
+```bash
+git clone https://github.com/liqi3333/med-order-lite-v1.git
+cd med-order-lite-v1
 ```
-
-当前发布包中包含 `dist/`，方便直接运行和测试。
 
 ---
 
