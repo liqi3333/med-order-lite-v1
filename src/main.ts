@@ -1,5 +1,4 @@
 import { getHealth, getTaxonomies } from "./api/system-api.js";
-import { searchDrugs } from "./api/drug-api.js";
 import { renderLoading, renderShell } from "./components/shell.js";
 import { state } from "./state.js";
 import { route } from "./router.js";
@@ -10,9 +9,9 @@ async function loadBootstrap(): Promise<void> {
     const health = await getHealth();
     state.backendOnline = Boolean(health.ok);
     state.backendMessage = health.service || "API online";
-    const [taxonomies, drugs] = await Promise.all([getTaxonomies(), searchDrugs({})]);
+    const taxonomies = await getTaxonomies();
     state.taxonomies = taxonomies;
-    state.drugs = drugs.items;
+    state.drugs = [];
   } catch (error) {
     state.backendOnline = false;
     state.backendMessage = error instanceof Error ? error.message : String(error);

@@ -1,17 +1,17 @@
-import { API_BASE, APP_NAME, SAFETY_DISCLAIMER } from "../config.js";
+import { APP_NAME, SAFETY_DISCLAIMER } from "../config.js";
 import { state } from "../state.js";
 import { escapeHtml } from "../utils/html.js";
 
 const navItems = [
-  { href: "#/drugs", match: "#/drugs", label: "药物查询", badge: "查" },
-  { href: "#/import", match: "#/import", label: "导入/维护", badge: "入" },
-  { href: "#/orders", match: "#/orders", label: "候选医嘱", badge: "医" }
+  { href: "#/drugs", match: "#/drugs", label: "查询", icon: "🔍" },
+  { href: "#/import", match: "#/import", label: "导入", icon: "📥" },
+  { href: "#/orders", match: "#/orders", label: "医嘱", icon: "📋" }
 ];
 
 export function backendStatusHtml(): string {
-  const label = state.backendOnline ? "后端已连接" : "后端离线";
+  const label = state.backendOnline ? "已连接" : "离线";
   const tone = state.backendOnline ? "approved" : "warning";
-  return `<span class="tag ${tone}">${label}</span><span class="tag">${escapeHtml(API_BASE)}</span>`;
+  return `<span class="status-dot ${tone}"></span><span class="status-text">${label}</span>`;
 }
 
 function isActive(activeHash: string, match: string): boolean {
@@ -19,30 +19,47 @@ function isActive(activeHash: string, match: string): boolean {
   return activeHash === match || activeHash.startsWith(`${match}/`) || activeHash.startsWith(`${match}?`);
 }
 
-export function renderShell(content: string, title = APP_NAME, subtitle = "轻量版：聚焦药物查询、药物导入/维护和候选医嘱生成。") {
+export function renderShell(content: string, title = APP_NAME, _subtitle = "") {
   const app = document.querySelector<HTMLDivElement>("#app");
   if (!app) return;
   const activeHash = (window.location.hash || "#/drugs").split("?")[0];
-  const navHtml = navItems.map((item) => `<a class="${isActive(activeHash, item.match) ? "active" : ""}" href="${item.href}"><span>${item.label}</span><strong>${item.badge}</strong></a>`).join("");
-  const mobileNavHtml = navItems.map((item) => `<a href="${item.href}">${item.label}</a>`).join("");
+  const navHtml = navItems.map((item) => {
+    const active = isActive(activeHash, item.match);
+    return `<a class="nav-item ${active ? "active" : ""}" href="${item.href}">
+      <span class="nav-icon">${item.icon}</span>
+      <span class="nav-label">${item.label}</span>
+    </a>`;
+  }).join("");
+
   app.innerHTML = `
-    <div class="mobile-header"><div class="mobile-nav">${mobileNavHtml}</div></div>
-    <div class="app-shell">
-      <aside class="sidebar">
-        <div class="brand"><div class="brand-mark">药</div><div><h1>${APP_NAME}</h1><p>Drug KB Lite</p></div></div>
-        <nav class="nav">${navHtml}</nav>
-        <div class="sidebar-note"><strong>安全边界</strong><br />${escapeHtml(SAFETY_DISCLAIMER)}</div>
-      </aside>
-      <main class="main">
-        <div class="topbar">
-          <div><h2>${escapeHtml(title)}</h2><p>${escapeHtml(subtitle)}</p><div class="tag-row" style="margin-top:10px;">${backendStatusHtml()}</div></div>
-          <div class="kb-badge">查药 · 导入 · 医嘱</div>
+    <header class="hero">
+      <h1>${escapeHtml(APP_NAME)}</h1>
+      <p class="hero-subtitle">药物信息管理与候选医嘱生成</p>
+    </header>
+    <nav class="nav">
+      <div class="nav-inner">
+        <div class="nav-brand">
+          <span class="brand-icon">💊</span>
+          <span class="brand-text">药</span>
         </div>
-        ${content}
-        <div class="footer-note">本系统仅生成候选医嘱模板，不构成医疗建议，不可直接用于真实诊疗或自动处方。</div>
-      </main>
-    </div>`;
+        <div class="nav-links">${navHtml}</div>
+        <div class="nav-status">
+          ${backendStatusHtml()}
+        </div>
+      </div>
+    </nav>
+    <main class="main">
+      ${content}
+    </main>
+    <footer class="footer">
+      <p>${escapeHtml(SAFETY_DISCLAIMER)}</p>
+    </footer>`;
 }
 
-export function renderLoading(message = "正在加载药物库...") { renderShell(`<div class="card">${escapeHtml(message)}</div>`); }
-export function renderError(message: string, title = "发生错误") { renderShell(`<div class="warning-panel">${escapeHtml(message)}</div>`, title); }
+export function renderLoading(message = "正在加载药物库...") {
+  renderShell(`<div class="card"><div class="loading">${escapeHtml(message)}</div></div>`);
+}
+
+export function renderError(message: string, title = "发生错误") {
+  renderShell(`<div class="card error-panel"><h3>${escapeHtml(title)}</h3><p>${escapeHtml(message)}</p></div>`);
+}

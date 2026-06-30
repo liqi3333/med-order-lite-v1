@@ -27,7 +27,7 @@ npm run dev            # 前端 :5173（src/ 变化时自动编译），后端 :
 npm run build:all      # compile:all + build:indexes + build:public-snapshot
 npm run compile:all    # 编译前端 + 后端
 npm run typecheck      # 类型检查前端和后端
-npm run test           # 单元测试（node:test + tsx，81 个测试）
+npm run test           # 单元测试（node:test + tsx，82 个测试）
 npm run validate:drugs # 校验 drug.md 文件
 npm run smoke:test     # 后端集成冒烟测试
 npm run build:indexes  # 手动修改药物文件后重建索引
@@ -41,11 +41,15 @@ npm run build:indexes  # 手动修改药物文件后重建索引
 - **两个独立的 `node_modules`**：根目录和 `server/`。后端代码使用的依赖必须写在 `server/package.json` 中。
 - **全程 ESM**——两个包都设置了 `"type": "module"`。相对导入必须使用 `.js` 扩展名（TypeScript NodeNext 解析）。
 - **测试文件**（`*.test.ts`）放在 `server/src/` 中，与源码同级。通过 `server/tsconfig.json` 的 `exclude` 排除编译。使用 `node --import tsx --test` 运行。
+- **自动编译**：`scripts/dev-all.mjs` 使用 `fs.watch` + `tsc` 防抖进行前端变更。
+- **路由表**：后端路由在 `server/src/server.ts` 中以表格格式定义，由 `server/src/core/router.ts` 匹配。
+- **索引优化**：`readById` 先检查 `drugs.index.json`，如果索引不存在则回退到目录扫描。
 
 ## 架构说明
 
 - **后端路由**：基于表的路由定义在 `server/src/server.ts`，由 `server/src/core/router.ts` 匹配（支持 `:param` 模式）。中间件链（CORS、日志、错误处理）在 `server/src/core/middleware.ts`。
 - **药物索引**：`readById` 先查询 `drugs.index.json` 中的文件路径，如果索引不存在则回退到目录扫描。
+- **前端 UI**：现代暖米色设计，玻璃态导航栏，标签筛选器，卡片网格布局。
 
 ## 关键目录
 

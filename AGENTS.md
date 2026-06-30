@@ -27,7 +27,7 @@ npm run dev            # frontend :5173 (auto-compiles on src/ change), backend 
 npm run build:all      # compile:all + build:indexes + build:public-snapshot
 npm run compile:all    # compile frontend + backend
 npm run typecheck      # typecheck both frontend and backend
-npm run test           # unit tests (node:test + tsx, 81 tests)
+npm run test           # unit tests (node:test + tsx, 82 tests)
 npm run validate:drugs # validate drug.md files
 npm run smoke:test     # backend integration smoke test
 npm run build:indexes  # rebuild drug index after manual drug file changes
@@ -41,11 +41,15 @@ npm run build:indexes  # rebuild drug index after manual drug file changes
 - **Two independent `node_modules`**: root and `server/`. A dependency used in server code must be in `server/package.json`.
 - **ESM throughout** — both packages set `"type": "module"`. Use `.js` extensions in relative imports (TypeScript NodeNext resolution).
 - **Test files** (`*.test.ts`) live alongside source in `server/src/`. Excluded from `tsc` compilation via `server/tsconfig.json` `exclude`. Run with `node --import tsx --test`.
+- **Auto-compile**: `scripts/dev-all.mjs` uses `fs.watch` + `tsc` with debounce for frontend changes.
+- **Route table**: Backend routes defined in table format in `server/src/server.ts`, matched by `server/src/core/router.ts`.
+- **Index optimization**: `readById` checks `drugs.index.json` first, falls back to directory scan if missing.
 
 ## Architecture notes
 
 - **Backend routing**: table-based route definitions in `server/src/server.ts`, matched by `server/src/core/router.ts` (supports `:param` patterns). Middleware chain (CORS, logging, error handling) in `server/src/core/middleware.ts`.
 - **Drug index**: `readById` first looks up the file path in `drugs.index.json`, falls back to directory scan if index is missing.
+- **Frontend UI**: Modern warm beige design with glassmorphism nav, pill-based filters, card grid layout.
 
 ## Key directories
 
