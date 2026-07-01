@@ -1,6 +1,7 @@
 import { APP_NAME, SAFETY_DISCLAIMER } from "../config.js";
 import { state } from "../state.js";
 import { escapeHtml } from "../utils/html.js";
+import { wireAISettingsButton } from "./ai-settings-modal.js";
 
 const navItems = [
   { href: "#/drugs", match: "#/drugs", label: "查询", icon: "🔍" },
@@ -45,6 +46,7 @@ export function renderShell(content: string, title = APP_NAME, _subtitle = "") {
         <div class="nav-links">${navHtml}</div>
         <div class="nav-status">
           ${backendStatusHtml()}
+          <button id="open-ai-settings" class="nav-action-btn" title="模型设置">⚙️</button>
         </div>
       </div>
     </nav>
@@ -54,6 +56,7 @@ export function renderShell(content: string, title = APP_NAME, _subtitle = "") {
     <footer class="footer">
       <p>${escapeHtml(SAFETY_DISCLAIMER)}</p>
     </footer>`;
+  wireAISettingsButton();
 }
 
 export function renderLoading(message = "正在加载药物库...") {

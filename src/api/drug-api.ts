@@ -10,5 +10,30 @@ function query(params: Record<string, string | boolean | undefined>): string {
 export function searchDrugs(filters: Partial<DrugFilter> = {}): Promise<{ total: number; items: DrugIndexItem[] }> {
   return apiFetch(`/api/drugs?${query({ q: filters.q, system: filters.system, primaryCategory: filters.primaryCategory, secondaryCategory: filters.secondaryCategory, route: filters.route, dosageForm: filters.dosageForm })}`);
 }
+
+export interface AISearchResponse {
+  success: boolean;
+  provider?: string;
+  model?: string;
+  params?: {
+    q?: string;
+    system?: string;
+    primaryCategory?: string;
+    secondaryCategory?: string;
+    route?: string;
+    dosageForm?: string;
+    explanation: string;
+  };
+  results?: DrugIndexItem[];
+  explanation?: string;
+  total?: number;
+  error?: string;
+  parse_time_ms?: number;
+}
+
+export function searchDrugsAI(searchQuery: string): Promise<AISearchResponse> {
+  return apiFetch("/api/drugs/search-ai", { method: "POST", body: JSON.stringify({ query: searchQuery }) });
+}
+
 export function getDrug(id: string): Promise<DrugDocumentResponse> { return apiFetch(`/api/drugs/${encodeURIComponent(id)}`); }
 export function getRawDrugMarkdown(id: string): Promise<string> { return apiFetch(`/api/drugs/${encodeURIComponent(id)}/raw-md`, { headers: { accept: "text/plain" } }); }

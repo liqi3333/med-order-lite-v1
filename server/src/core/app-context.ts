@@ -9,6 +9,7 @@ import { labelTextPlugin } from "../plugins/label-text/plugin.js";
 import { excelCsvPlugin } from "../plugins/excel-csv/plugin.js";
 import { labelPdfPlugin } from "../plugins/label-pdf/plugin.js";
 import { labelOcrPlugin } from "../plugins/label-ocr/plugin.js";
+import { aiLabelTextPlugin } from "../plugins/ai-label-text/plugin.js";
 
 export function createAppContext() {
   const config = getConfig();
@@ -21,6 +22,7 @@ export function createAppContext() {
   pluginRegistry.register(excelCsvPlugin);
   pluginRegistry.register(labelPdfPlugin);
   pluginRegistry.register(labelOcrPlugin);
+  pluginRegistry.register(aiLabelTextPlugin);
   const drugEntryService = new DrugEntryService(pluginRegistry, drugRepository, drugValidator);
   const orderGeneratorService = new OrderGeneratorService(drugRepository, taxonomyService);
   return { config, taxonomyService, drugRepository, drugValidator, drugEntryService, orderGeneratorService };

@@ -1,4 +1,4 @@
-import { getDrug, getRawDrugMarkdown, searchDrugs } from "../api/drug-api.js";
+import { getDrug, getRawDrugMarkdown, searchDrugs, searchDrugsAI, type AISearchResponse } from "../api/drug-api.js";
 import { rebuildIndexes } from "../api/system-api.js";
 import {
   renderDrugCard,
@@ -23,6 +23,8 @@ let filters: DrugFilter = {
 
 let currentItems: DrugIndexItem[] = [];
 let hasSearched = false;
+let aiSearchExplanation = "";
+let aiSearchParams = "";
 
 function categoriesForSystem(system: string) {
   return (state.taxonomies?.drugCategories.categories || [])
@@ -109,10 +111,18 @@ export function renderDrugLibraryPage(): void {
     <section class="card">
       <h3>药物查询</h3>
       <p class="muted">输入药物通用名、商品名、别名或说明书关键词，快速进入详情并生成候选医嘱。</p>
-      <div class="search-box" style="margin-top:14px;">
+      <div class="ai-search-box" style="margin-top:14px;">
+        <div class="ai-search-row">
+          <input id="drug-ai-q" class="input" placeholder="用自然语言搜索，如：治呼吸道感染的抗生素、老人能用的降压药、发烧用什么药" />
+          <button id="drug-ai-search" class="btn btn-primary ai-search-btn">AI 搜索</button>
+        </div>
+        <div id="ai-search-explain" style="margin-top:8px;"></div>
+      </div>
+      <div style="margin:12px 0; text-align:center; color:var(--ink-faint); font-size:13px;">─── 或使用高级筛选 ───</div>
+      <div class="search-box">
         <input id="drug-q" class="input" value="${escapeHtml(filters.q)}" placeholder="搜索药物名称 / 商品名 / 说明书关键词" />
       </div>
-      <details class="advanced-panel" style="margin-top:14px;" open>
+      <details class="advanced-panel" style="margin-top:14px;">
         <summary>高级筛选</summary>
         <div class="form-grid" style="margin-top:14px;">
           <div class="form-field"><label>药物体系</label><select id="drug-system" class="select">${optionHtml(state.taxonomies?.drugCategories.systems || [], filters.system, "全部")}</select></div>
@@ -123,7 +133,7 @@ export function renderDrugLibraryPage(): void {
         </div>
       </details>
       <div class="actions" style="margin-top:14px;">
-        <button id="drug-search" class="btn btn-primary">搜索</button>
+        <button id="drug-search" class="btn btn-ghost">关键词搜索</button>
         <button id="drug-reset" class="btn btn-ghost">重置</button>
         <button id="drug-rebuild-index" class="btn btn-ghost">重建索引</button>
         <a class="btn btn-primary" href="#/import">导入药物</a>
@@ -134,7 +144,7 @@ export function renderDrugLibraryPage(): void {
       <div id="drug-results" class="list">${
         hasSearched
           ? currentItems.map(renderDrugCard).join("") || "暂无匹配药物。"
-          : '<div class="muted" style="text-align:center; padding:40px 0;">请输入搜索条件或选择筛选项后点击"搜索"</div>'
+          : '<div class="muted" style="text-align:center; padding:40px 0;">在上方输入自然语言或关键词搜索</div>'
       }</div>
     </section>
   `,
@@ -142,6 +152,55 @@ export function renderDrugLibraryPage(): void {
   );
 
   qs("#drug-search")?.addEventListener("click", () => void runSearch());
+
+  // AI search
+  async function runAISearch(): Promise<void> {
+    const q = valueOf("#drug-ai-q");
+    if (!q.trim()) {
+      showToast("请输入搜索内容", "warning");
+      return;
+    }
+    const explainEl = qs("#ai-search-explain");
+    const resultsEl = qs("#drug-results");
+    const countEl = qs("#drug-count");
+    if (explainEl) explainEl.innerHTML = '<span class="ai-searching">AI 正在理解搜索意图...</span>';
+    if (resultsEl) resultsEl.innerHTML = '<div class="loading">搜索中...</div>';
+    try {
+      const resp = await searchDrugsAI(q);
+      if (!resp.success) throw new Error(resp.error || "AI 搜索失败");
+      currentItems = resp.results || [];
+      hasSearched = true;
+      aiSearchExplanation = resp.explanation || "";
+      aiSearchParams = resp.params
+        ? Object.entries(resp.params)
+            .filter(([k]) => k !== "explanation")
+            .filter(([, v]) => v)
+            .map(([k, v]) => `${k}=${v}`)
+            .join(", ")
+        : "";
+      if (explainEl) {
+        explainEl.innerHTML = `<div class="ai-explain-box">
+          <span class="ai-explain-label">AI 理解：</span> ${escapeHtml(aiSearchExplanation)}
+          ${aiSearchParams ? `<span class="ai-explain-params">（${escapeHtml(aiSearchParams)}）</span>` : ""}
+          <span class="muted" style="margin-left:8px;">${resp.parse_time_ms}ms</span>
+        </div>`;
+      }
+      if (countEl) countEl.textContent = `AI 搜索结果：${currentItems.length}`;
+      if (resultsEl) {
+        resultsEl.innerHTML = currentItems.map(renderDrugCard).join("") || "暂无匹配药物。";
+      }
+    } catch (error) {
+      const msg = error instanceof Error ? error.message : String(error);
+      showToast(msg, "danger");
+      if (explainEl) explainEl.innerHTML = `<div class="ai-explain-error">${escapeHtml(msg)}</div>`;
+      if (resultsEl) resultsEl.innerHTML = "";
+    }
+  }
+
+  qs("#drug-ai-search")?.addEventListener("click", () => void runAISearch());
+  qs<HTMLInputElement>("#drug-ai-q")?.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") void runAISearch();
+  });
 
   qs<HTMLInputElement>("#drug-q")?.addEventListener("keydown", (e) => {
     if (e.key === "Enter") void runSearch();

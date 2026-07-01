@@ -10,6 +10,7 @@ import {
 } from "../api/import-api.js";
 import { getDrug, getRawDrugMarkdown, searchDrugs } from "../api/drug-api.js";
 import { rebuildIndexes } from "../api/system-api.js";
+import { parseLabelWithAI, getAIConfig } from "../api/ai-api.js";
 import { renderShell } from "../components/shell.js";
 import { state } from "../state.js";
 import { DrugDocumentResponse } from "../types/drug.js";
@@ -738,6 +739,90 @@ function wireImportPage(): void {
       showToast(message, "danger");
     }
   });
+
+  // AI import
+  (async () => {
+    try {
+      const aiCfg = await getAIConfig();
+      const statusEl = qs("#ai-status");
+      if (statusEl) {
+        if (aiCfg.enabled && aiCfg.api_key_set) {
+          statusEl.innerHTML = `<span class="ai-status-ok">AI 已启用</span> <span class="muted">(${escapeHtml(aiCfg.provider)} / ${escapeHtml(aiCfg.model)})</span>`;
+        } else {
+          statusEl.innerHTML = `<span class="ai-status-warn">AI 未启用</span> <span class="muted">请先在导航栏点击 ⚙️ 配置 API Key</span>`;
+        }
+      }
+    } catch { /* ignore */ }
+  })();
+
+  qs("#parse-ai")?.addEventListener("click", async () => {
+    const text = valueOf("#ai-label-text");
+    if (!text.trim()) {
+      showToast("请输入说明书文本", "danger");
+      return;
+    }
+    const missing = validateRequiredFields();
+    if (missing.length) {
+      showToast(`请填写必填项：${missing.join("、")}`, "danger");
+      return;
+    }
+    const target = qs("#ai-import-result");
+    if (target) target.innerHTML = `<div class="loading">AI 正在解析...</div>`;
+    try {
+      const aiResult = await parseLabelWithAI(text, {
+        generic_cn: valueOf("#generic-cn"),
+        system: valueOf("#system"),
+        primary_category: valueOf("#primary"),
+        secondary_category: valueOf("#secondary"),
+      });
+      if (!aiResult.success || !aiResult.data) {
+        throw new Error(aiResult.error || "AI 解析失败");
+      }
+      const data = aiResult.data;
+      // Fill form fields from AI result
+      const setVal = (sel: string, val: string) => {
+        const el = qs<HTMLInputElement>(sel);
+        if (el && val) el.value = val;
+      };
+      if (data.names.generic_cn) setVal("#generic-cn", data.names.generic_cn);
+      if (data.names.generic_en) setVal("#generic-en", data.names.generic_en);
+      if (data.classification.system) {
+        setVal("#system", data.classification.system);
+        updatePrimaryOptions();
+      }
+      if (data.classification.primary_category) setVal("#primary", data.classification.primary_category);
+      if (data.classification.secondary_category) setVal("#secondary", data.classification.secondary_category);
+      if (data.classification.pharmacologic_class) setVal("#pharm-class", data.classification.pharmacologic_class);
+      if (data.classification.prescription_type) setVal("#prescription", data.classification.prescription_type);
+      if (data.forms[0]) {
+        if (data.forms[0].dosage_form) setVal("#dosage-form", data.forms[0].dosage_form);
+        if (data.forms[0].strength) setVal("#strength", data.forms[0].strength);
+        if (data.forms[0].route) setVal("#route", data.forms[0].route);
+        if (data.forms[0].manufacturer) setVal("#manufacturer", data.forms[0].manufacturer);
+        if (data.forms[0].approval_number) setVal("#approval-number", data.forms[0].approval_number);
+      }
+      // Use AI label to do a standard import
+      const payload = buildLabelPayload();
+      payload.label_text = text;
+      const result = await importLabelText({ ...payload, saveMode: "preview" });
+      if (target) {
+        const confPct = Math.round(data.confidence * 100);
+        const confClass = data.confidence >= 0.8 ? "ai-conf-high" : data.confidence >= 0.5 ? "ai-conf-mid" : "ai-conf-low";
+        let html = `<div class="ai-parse-info"><span class="ai-badge ${confClass}">置信度 ${confPct}%</span> <span class="muted">provider: ${escapeHtml(aiResult.provider)} / ${escapeHtml(aiResult.model)} / ${aiResult.parse_time_ms}ms</span></div>`;
+        if (data.warnings.length > 0) {
+          html += `<div class="ai-warnings">${data.warnings.map((w) => `<div class="ai-warning-item">⚠️ ${escapeHtml(w)}</div>`).join("")}</div>`;
+        }
+        html += renderImportResult(result, "label");
+        target.innerHTML = html;
+      }
+      wireResultEvents(result, "label");
+      showToast("AI 解析完成", "success");
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      if (target) target.innerHTML = `<div class="warning-panel">${escapeHtml(message)}</div>`;
+      showToast(message, "danger");
+    }
+  });
 }
 
 export async function renderImportPage(): Promise<void> {
@@ -758,8 +843,9 @@ export async function renderImportPage(): Promise<void> {
   renderShell(
     `
     ${renderBasicForm(defaults)}
-    <section class="card" style="margin-top:16px;"><h3>选择导入方式</h3><p class="muted">先解析并预览，检查后再确认保存；需要调整时点"修改表单"。</p><div class="form-field"><label>导入方式</label><select id="import-method" class="select"><option value="label">粘贴说明书文本 / OCR 后文本</option><option value="pdf">上传文字型 PDF</option><option value="csv">Excel / CSV 批量导入</option></select></div></section>
+    <section class="card" style="margin-top:16px;"><h3>选择导入方式</h3><p class="muted">先解析并预览，检查后再确认保存；需要调整时点"修改表单"。</p><div class="form-field"><label>导入方式</label><select id="import-method" class="select"><option value="label">粘贴说明书文本 / OCR 后文本</option><option value="ai">AI 智能解析</option><option value="pdf">上传文字型 PDF</option><option value="csv">Excel / CSV 批量导入</option></select></div></section>
     <section class="card" style="margin-top:16px;" data-import-panel="label"><h3>说明书文本</h3><p class="muted">可粘贴完整说明书，也可粘贴手机/系统 OCR 后的文本。</p><textarea id="label-text" class="textarea" rows="14" placeholder="粘贴完整说明书文本。建议包含【适应症】【用法用量】【禁忌】【注意事项】【不良反应】【药物相互作用】等标题。">${escapeHtml(defaults.labelText || "")}</textarea><div class="actions" style="margin-top:14px;"><button id="parse-label" data-import-action="label" class="btn btn-primary">解析并预览</button></div><div id="import-result" style="margin-top:16px;"></div></section>
+    <section class="card" style="margin-top:16px;" data-import-panel="ai" hidden><h3>AI 智能解析</h3><p class="muted">使用 AI 自动解析药品说明书，提取结构化信息。支持任意格式文本，自动推断分类。</p><div id="ai-status" class="ai-status-bar"></div><textarea id="ai-label-text" class="textarea" rows="14" placeholder="粘贴完整说明书文本。AI 将自动识别药品名称、分类、适应症、用法用量等字段。">${escapeHtml(defaults.labelText || "")}</textarea><div class="actions" style="margin-top:14px;"><button id="parse-ai" data-import-action="ai" class="btn btn-primary">AI 解析并预览</button></div><div id="ai-import-result" style="margin-top:16px;"></div></section>
     <section class="card" style="margin-top:16px;" data-import-panel="pdf" hidden><h3>PDF 说明书</h3><p class="muted">上传文字型 PDF。扫描件请先用外部 OCR 识别，再粘贴到"说明书文本"。</p><input id="pdf-file" class="input" type="file" accept="application/pdf,.pdf" /><div class="actions" style="margin-top:12px;"><button id="parse-pdf" data-import-action="pdf" class="btn btn-primary">解析并预览</button></div><div id="pdf-import-result" style="margin-top:16px;"></div></section>
     <section class="card" style="margin-top:16px;" data-import-panel="csv" hidden><h3>Excel / CSV 批量导入</h3><p class="muted">上传 CSV 文件或粘贴 Excel 复制出的表格文本。第一行为表头。</p><input id="csv-file" class="input" type="file" accept=".csv,.tsv,.txt" /><textarea id="csv-text" class="textarea monospace" rows="10" placeholder="粘贴 CSV/TSV 内容，或上传 CSV 文件。"></textarea><div class="actions" style="margin-top:12px;"><button id="fill-csv-sample" class="btn btn-ghost">填入 CSV 示例</button><button id="parse-csv" data-import-action="csv" class="btn btn-primary">批量解析并预览</button></div><div id="csv-import-result" style="margin-top:16px;"></div></section>
     <details class="advanced-panel card" style="margin-top:16px;"><summary>高级维护工具</summary>
