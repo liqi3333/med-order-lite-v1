@@ -4,7 +4,7 @@ import { Route, matchRoute } from "./core/router.js";
 import { corsMiddleware, loggingMiddleware, errorMiddleware, runMiddleware } from "./core/middleware.js";
 import { parseUrl, readRequestBody, sendJson, sendText } from "./utils/http.js";
 import { parseDrugMarkdown } from "./modules/drug-kb/drug-md.js";
-import { getAIConfig, updateAIConfig, resetAIConfig } from "./modules/ai/config.js";
+import { getAIConfig, resetAIConfig, listProfiles, getActiveProfileId, createProfile, updateProfile, deleteProfile, setActiveProfile, updateActiveProfile, getProviderDefaults, deactivateAll } from "./modules/ai/config.js";
 import { createLLMProvider } from "./modules/ai/llm-provider.js";
 import { parseWithAI } from "./modules/ai/label-parser.js";
 import { aiSearchDrugs } from "./modules/ai/drug-search.js";
@@ -199,6 +199,8 @@ const routes: Route[] = [
     method: "GET", pattern: "/api/ai/config",
     handler: async (_req, res) => {
       const config = getAIConfig();
+      const profiles = listProfiles();
+      const activeId = getActiveProfileId();
       sendJson(res, {
         provider: config.provider,
         api_key_set: !!config.api_key,
@@ -208,6 +210,8 @@ const routes: Route[] = [
         temperature: config.temperature,
         max_tokens: config.max_tokens,
         enabled: config.enabled,
+        profiles: profiles.map((p) => ({ id: p.id, name: p.name, provider: p.provider, model: p.model })),
+        activeProfileId: activeId,
       });
     },
   },
@@ -228,8 +232,99 @@ const routes: Route[] = [
       if (typeof body.temperature === "number") patch.temperature = body.temperature;
       if (typeof body.max_tokens === "number") patch.max_tokens = body.max_tokens;
       if (typeof body.enabled === "boolean") patch.enabled = body.enabled;
-      updateAIConfig(patch);
+      updateActiveProfile(patch);
       sendJson(res, { success: true, config: getAIConfig() });
+    },
+  },
+  // ── Profile CRUD ─────────────────────────────────────────────────────────
+  {
+    method: "GET", pattern: "/api/ai/profiles",
+    handler: async (_req, res) => {
+      sendJson(res, { profiles: listProfiles(), activeProfileId: getActiveProfileId() });
+    },
+  },
+  {
+    method: "POST", pattern: "/api/ai/profiles",
+    handler: async (req, res) => {
+      const body = await readRequestBody<{ name?: string; provider?: string; api_key?: string; base_url?: string; model?: string; temperature?: number; max_tokens?: number }>(req);
+      if (!body.name?.trim()) throw new Error("name 不能为空");
+      if (!body.api_key?.trim()) throw new Error("api_key 不能为空");
+      const profile = createProfile({
+        name: body.name,
+        provider: (body.provider || "openai") as any,
+        api_key: body.api_key,
+        base_url: body.base_url || "",
+        model: body.model || "",
+        temperature: body.temperature ?? 0.3,
+        max_tokens: body.max_tokens ?? 4096,
+      });
+      sendJson(res, { success: true, profile });
+    },
+  },
+  {
+    method: "PUT", pattern: "/api/ai/profiles/:id",
+    handler: async (req, res, params) => {
+      const body = await readRequestBody<Record<string, unknown>>(req);
+      const patch: Record<string, unknown> = {};
+      if (typeof body.name === "string") patch.name = body.name;
+      if (typeof body.provider === "string") patch.provider = body.provider;
+      if (typeof body.api_key === "string") patch.api_key = body.api_key;
+      if (typeof body.base_url === "string") patch.base_url = body.base_url;
+      if (typeof body.model === "string") patch.model = body.model;
+      if (typeof body.temperature === "number") patch.temperature = body.temperature;
+      if (typeof body.max_tokens === "number") patch.max_tokens = body.max_tokens;
+      const updated = updateProfile(params.id, patch);
+      if (!updated) sendJson(res, { error: "未找到配置" }, { status: 404 });
+      else sendJson(res, { success: true, profile: updated });
+    },
+  },
+  {
+    method: "DELETE", pattern: "/api/ai/profiles/:id",
+    handler: async (_req, res, params) => {
+      const ok = deleteProfile(params.id);
+      if (!ok) sendJson(res, { error: "未找到配置" }, { status: 404 });
+      else sendJson(res, { success: true });
+    },
+  },
+  {
+    method: "POST", pattern: "/api/ai/profiles/:id/activate",
+    handler: async (_req, res, params) => {
+      const ok = setActiveProfile(params.id);
+      if (!ok) sendJson(res, { error: "未找到配置" }, { status: 404 });
+      else sendJson(res, { success: true, config: getAIConfig() });
+    },
+  },
+  {
+    method: "POST", pattern: "/api/ai/profiles/deactivate",
+    handler: async (_req, res) => {
+      deactivateAll();
+      sendJson(res, { success: true });
+    },
+  },
+  {
+    method: "POST", pattern: "/api/ai/test-connection",
+    handler: async (req, res) => {
+      const body = await readRequestBody<{ provider?: string; api_key?: string; base_url?: string; model?: string; temperature?: number }>(req);
+      if (!body.api_key?.trim()) throw new Error("api_key 不能为空");
+      const providerId = (body.provider || "openai") as LLMProviderID;
+      const defaults = getProviderDefaults(providerId);
+      const testConfig = {
+        provider: providerId,
+        api_key: body.api_key,
+        base_url: body.base_url?.trim() || defaults.baseUrl,
+        model: body.model?.trim() || defaults.model,
+        temperature: body.temperature ?? 0.3,
+        max_tokens: 32,
+        enabled: true,
+      };
+      const provider = createLLMProvider(testConfig);
+      const start = Date.now();
+      try {
+        const reply = await provider.chat({ system: "回复 ok", user: "ping" });
+        sendJson(res, { success: true, reply: reply.trim().slice(0, 100), latency_ms: Date.now() - start });
+      } catch (err) {
+        sendJson(res, { success: false, error: err instanceof Error ? err.message : String(err), latency_ms: Date.now() - start }, { status: 400 });
+      }
     },
   },
   {

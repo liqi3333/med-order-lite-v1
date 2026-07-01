@@ -1,4 +1,5 @@
 import { getHealth, getTaxonomies } from "./api/system-api.js";
+import { getAIConfig } from "./api/ai-api.js";
 import { renderLoading, renderShell } from "./components/shell.js";
 import { state } from "./state.js";
 import { route } from "./router.js";
@@ -12,6 +13,13 @@ async function loadBootstrap(): Promise<void> {
     const taxonomies = await getTaxonomies();
     state.taxonomies = taxonomies;
     state.drugs = [];
+    // Load AI config
+    try {
+      const aiCfg = await getAIConfig();
+      state.aiModel = aiCfg.model;
+      state.aiProvider = aiCfg.provider;
+      state.aiEnabled = aiCfg.enabled;
+    } catch { /* AI not configured */ }
   } catch (error) {
     state.backendOnline = false;
     state.backendMessage = error instanceof Error ? error.message : String(error);

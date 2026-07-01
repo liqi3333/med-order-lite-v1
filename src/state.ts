@@ -6,9 +6,15 @@ export const state: {
   backendMessage: string;
   taxonomies: TaxonomyBundle | null;
   drugs: DrugIndexItem[];
+  aiModel: string;
+  aiProvider: string;
+  aiEnabled: boolean;
 } = {
   backendOnline: false,
   backendMessage: "后端尚未连接",
   taxonomies: null,
-  drugs: []
+  drugs: [],
+  aiModel: "",
+  aiProvider: "",
+  aiEnabled: false,
 };

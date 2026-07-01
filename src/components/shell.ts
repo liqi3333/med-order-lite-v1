@@ -10,7 +10,7 @@ const navItems = [
 ];
 
 export function backendStatusHtml(): string {
-  const label = state.backendOnline ? "已连接" : "离线";
+  const label = state.backendOnline ? "后端已连接" : "后端离线";
   const tone = state.backendOnline ? "approved" : "warning";
   return `<span class="status-dot ${tone}"></span><span class="status-text">${label}</span>`;
 }
@@ -46,7 +46,10 @@ export function renderShell(content: string, title = APP_NAME, _subtitle = "") {
         <div class="nav-links">${navHtml}</div>
         <div class="nav-status">
           ${backendStatusHtml()}
-          <button id="open-ai-settings" class="nav-action-btn" title="模型设置">⚙️</button>
+          <button id="open-ai-settings" class="nav-action-btn" title="模型设置">
+            <span class="nav-action-icon">⚙️</span>
+            <span class="nav-action-text">${state.aiEnabled && state.aiModel ? escapeHtml(state.aiModel) : "模型"}</span>
+          </button>
         </div>
       </div>
     </nav>

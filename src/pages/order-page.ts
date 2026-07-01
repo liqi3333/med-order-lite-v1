@@ -1,4 +1,5 @@
 import { generateOrder } from "../api/order-api.js";
+import { searchDrugs } from "../api/drug-api.js";
 import { renderShell } from "../components/shell.js";
 import { state } from "../state.js";
 import { CandidateOrderTemplate } from "../types/order.js";
@@ -26,7 +27,13 @@ function renderOrderResult(order: CandidateOrderTemplate): string {
   <div class="warning-panel" style="margin-top:14px;">${escapeHtml(order.disclaimer)}</div>`;
 }
 
-export function renderOrderPage(): void {
+export async function renderOrderPage(): Promise<void> {
+  if (state.drugs.length === 0) {
+    try {
+      const result = await searchDrugs({});
+      state.drugs = result.items;
+    } catch { /* ignore */ }
+  }
   const selectedDrug = getParam("drug") || state.drugs[0]?.id || "";
   renderShell(`
     <section class="card"><h3>生成候选医嘱</h3><p class="muted">默认只填写药物、医嘱场景和诊断/用途；患者信息作为补充项折叠展示。</p><div class="form-grid">

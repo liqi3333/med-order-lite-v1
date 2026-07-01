@@ -80,3 +80,19 @@ export interface AIRuntimeConfig {
   max_tokens: number;
   enabled: boolean;
 }
+
+export interface AIProfile {
+  id: string;
+  name: string;
+  provider: LLMProviderID;
+  api_key: string;
+  base_url: string;
+  model: string;
+  temperature: number;
+  max_tokens: number;
+}
+
+export interface AIConfigStore {
+  profiles: AIProfile[];
+  activeProfileId: string | null;
+}

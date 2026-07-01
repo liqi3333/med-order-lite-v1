@@ -421,37 +421,39 @@ function renderBasicForm(defaults: Defaults): string {
   const defaultSecondary =
     defaults.secondary || firstValue(childrenForCategory(defaultPrimary), "");
   return `
-    <section class="card" id="import-workflow"><div class="section-title"><div><h3>${editingDrugId ? "修改药物信息" : "导入基础信息"}</h3><p class="muted">首屏只保留核心字段；其它维护字段收进"更多信息"。</p></div>${editingDrugId ? `<a class="btn btn-ghost" href="#/drugs/${encodeURIComponent(editingDrugId)}">返回药物详情</a>` : ""}</div>
-      ${editingDrugId ? `<div class="info-panel" style="margin-bottom:14px;"><strong>正在维护已保存药物：</strong><code>${escapeHtml(editingDrugId)}</code><p>确认保存后会覆盖原药物文件、自动重建索引，并递增维护版本。若修改分类导致文件路径变化，旧文件会自动移除。</p></div>` : ""}
-      <div id="duplicate-hint"></div>
-      <div class="form-grid">
-        <div class="form-field"><label>中文通用名 <span class="required">*</span></label><input id="generic-cn" class="input" value="${attr(defaults.genericCn)}" placeholder="例如：某某药物" /></div>
-        <div class="form-field"><label>药物体系 <span class="required">*</span></label><select id="system" class="select">${optionHtml(tx.drugCategories.systems, defaultSystem, "请选择药物体系")}</select></div>
-        <div class="form-field"><label>药物分类 <span class="required">*</span></label><select id="primary" class="select">${optionHtml(categoriesForSystem(defaultSystem), defaultPrimary, "请选择一级分类")}</select></div>
-        <div class="form-field"><label>剂型 <span class="required">*</span></label><select id="dosage-form" class="select">${optionHtml(tx.dosageForms, defaults.dosageForm || firstValue(tx.dosageForms), "请选择剂型")}</select></div>
-        <div class="form-field"><label>给药途径 <span class="required">*</span></label><select id="route" class="select">${optionHtml(tx.routes, defaults.route || firstValue(tx.routes), "请选择给药途径")}</select></div>
-        <div class="form-field"><label>规格</label><input id="strength" class="input" value="${attr(defaults.strength)}" placeholder="自由输入，例如：0.25g / 5mg / 100ml:0.9g" /></div>
-      </div>
-      <div class="form-field" style="margin-top:14px;"><label>用法用量</label><textarea id="dosage-summary" class="textarea" rows="4" placeholder="可直接填写常用用法用量；系统会作为说明书结构化字段的一部分。">${escapeHtml(defaults.dosageSummary || "")}</textarea></div>
-      <details class="advanced-panel" style="margin-top:14px;"><summary>更多信息</summary>
-        <div class="form-grid" style="margin-top:14px;">
-          <div class="form-field"><label>英文名</label><input id="generic-en" class="input" value="${attr(defaults.genericEn)}" /></div>
-          <div class="form-field"><label>商品名 / 别名</label><input id="aliases" class="input" value="${attr(defaults.aliases)}" placeholder="多个用逗号分隔" /></div>
-          <div class="form-field"><label>二级分类</label><select id="secondary" class="select">${optionHtml(childrenForCategory(defaultPrimary), defaultSecondary, "请选择二级分类")}</select></div>
-          <div class="form-field"><label>药理分类</label><input id="pharm-class" class="input" value="${attr(defaults.pharmacologicClass)}" placeholder="如：β-内酰胺类抗菌药" /></div>
-          <div class="form-field"><label>处方属性</label><select id="prescription" class="select">${optionHtml(tx.prescriptionTypes, defaults.prescription || firstValue(tx.prescriptionTypes), "请选择处方属性")}</select></div>
-          <div class="form-field"><label>包装单位</label><select id="package-unit" class="select">${optionHtml(PACKAGE_UNIT_OPTIONS, defaults.packageUnit || "box", "请选择包装单位")}</select></div>
-          <div class="form-field"><label>生产厂家</label><input id="manufacturer" class="input" value="${attr(defaults.manufacturer)}" /></div>
-          <div class="form-field"><label>批准文号</label><input id="approval-number" class="input" value="${attr(defaults.approvalNumber)}" /></div>
-          <div class="form-field"><label>来源标题</label><input id="source-title" class="input" value="${attr(defaults.sourceTitle)}" placeholder="例如：某某药物说明书" /></div>
-          <div class="form-field"><label>来源 URL</label><input id="source-url" class="input" value="${attr(defaults.sourceUrl)}" placeholder="可选" /></div>
-          <div class="form-field"><label>说明书修订日期</label><input id="revision-date" class="input" value="${attr(defaults.revisionDate)}" placeholder="例如：2026-05-18" /></div>
-          <div class="form-field"><label>录入 / 修改人</label><input id="actor" class="input" value="${attr(defaults.actor || "web-user")}" /></div>
+    <details class="advanced-panel card" id="import-workflow"><summary>${editingDrugId ? "修改药物信息" : "导入基础信息"}</summary>
+      <div style="margin-top:16px;">
+        ${editingDrugId ? `<div class="info-panel" style="margin-bottom:14px;"><strong>正在维护已保存药物：</strong><code>${escapeHtml(editingDrugId)}</code><p>确认保存后会覆盖原药物文件、自动重建索引，并递增维护版本。若修改分类导致文件路径变化，旧文件会自动移除。</p></div>` : ""}
+        <div id="duplicate-hint"></div>
+        <div class="form-grid">
+          <div class="form-field"><label>中文通用名 <span class="required">*</span></label><input id="generic-cn" class="input" value="${attr(defaults.genericCn)}" placeholder="例如：某某药物" /></div>
+          <div class="form-field"><label>药物体系 <span class="required">*</span></label><select id="system" class="select">${optionHtml(tx.drugCategories.systems, defaultSystem, "请选择药物体系")}</select></div>
+          <div class="form-field"><label>药物分类 <span class="required">*</span></label><select id="primary" class="select">${optionHtml(categoriesForSystem(defaultSystem), defaultPrimary, "请选择一级分类")}</select></div>
+          <div class="form-field"><label>剂型 <span class="required">*</span></label><select id="dosage-form" class="select">${optionHtml(tx.dosageForms, defaults.dosageForm || firstValue(tx.dosageForms), "请选择剂型")}</select></div>
+          <div class="form-field"><label>给药途径 <span class="required">*</span></label><select id="route" class="select">${optionHtml(tx.routes, defaults.route || firstValue(tx.routes), "请选择给药途径")}</select></div>
+          <div class="form-field"><label>规格</label><input id="strength" class="input" value="${attr(defaults.strength)}" placeholder="自由输入，例如：0.25g / 5mg / 100ml:0.9g" /></div>
         </div>
-        <div class="form-field" style="margin-top:12px;"><label>风险标签</label><div class="checkbox-grid">${tx.riskTags.map((x) => `<label><input type="checkbox" name="risk" value="${escapeHtml(x.value)}" ${(defaults.riskTags || []).includes(x.value) ? "checked" : ""} /> ${escapeHtml(x.label)}</label>`).join("") || "暂无风险标签"}</div></div>
-      </details>
-      <div class="actions" style="margin-top:14px;"><button id="fill-sample" class="btn btn-ghost">填入文本示例</button><button id="clear-form" class="btn btn-ghost">清空全部</button></div>
-    </section>`;
+        <div class="form-field" style="margin-top:14px;"><label>用法用量</label><textarea id="dosage-summary" class="textarea" rows="4" placeholder="可直接填写常用用法用量；系统会作为说明书结构化字段的一部分。">${escapeHtml(defaults.dosageSummary || "")}</textarea></div>
+        <details class="advanced-panel" style="margin-top:14px;"><summary>更多信息</summary>
+          <div class="form-grid" style="margin-top:14px;">
+            <div class="form-field"><label>英文名</label><input id="generic-en" class="input" value="${attr(defaults.genericEn)}" /></div>
+            <div class="form-field"><label>商品名 / 别名</label><input id="aliases" class="input" value="${attr(defaults.aliases)}" placeholder="多个用逗号分隔" /></div>
+            <div class="form-field"><label>二级分类</label><select id="secondary" class="select">${optionHtml(childrenForCategory(defaultPrimary), defaultSecondary, "请选择二级分类")}</select></div>
+            <div class="form-field"><label>药理分类</label><input id="pharm-class" class="input" value="${attr(defaults.pharmacologicClass)}" placeholder="如：β-内酰胺类抗菌药" /></div>
+            <div class="form-field"><label>处方属性</label><select id="prescription" class="select">${optionHtml(tx.prescriptionTypes, defaults.prescription || firstValue(tx.prescriptionTypes), "请选择处方属性")}</select></div>
+            <div class="form-field"><label>包装单位</label><select id="package-unit" class="select">${optionHtml(PACKAGE_UNIT_OPTIONS, defaults.packageUnit || "box", "请选择包装单位")}</select></div>
+            <div class="form-field"><label>生产厂家</label><input id="manufacturer" class="input" value="${attr(defaults.manufacturer)}" /></div>
+            <div class="form-field"><label>批准文号</label><input id="approval-number" class="input" value="${attr(defaults.approvalNumber)}" /></div>
+            <div class="form-field"><label>来源标题</label><input id="source-title" class="input" value="${attr(defaults.sourceTitle)}" placeholder="例如：某某药物说明书" /></div>
+            <div class="form-field"><label>来源 URL</label><input id="source-url" class="input" value="${attr(defaults.sourceUrl)}" placeholder="可选" /></div>
+            <div class="form-field"><label>说明书修订日期</label><input id="revision-date" class="input" value="${attr(defaults.revisionDate)}" placeholder="例如：2026-05-18" /></div>
+            <div class="form-field"><label>录入 / 修改人</label><input id="actor" class="input" value="${attr(defaults.actor || "web-user")}" /></div>
+          </div>
+          <div class="form-field" style="margin-top:12px;"><label>风险标签</label><div class="checkbox-grid">${tx.riskTags.map((x) => `<label><input type="checkbox" name="risk" value="${escapeHtml(x.value)}" ${(defaults.riskTags || []).includes(x.value) ? "checked" : ""} /> ${escapeHtml(x.label)}</label>`).join("") || "暂无风险标签"}</div></div>
+        </details>
+        <div class="actions" style="margin-top:14px;"><button id="fill-sample" class="btn btn-ghost">填入文本示例</button><button id="clear-form" class="btn btn-ghost">清空全部</button></div>
+      </div>
+    </details>`;
 }
 
 function collectFormData(): Defaults {

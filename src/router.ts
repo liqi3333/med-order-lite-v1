@@ -15,7 +15,7 @@ export async function route(): Promise<void> {
     if (p.length === 0) return renderDrugLibraryPage();
     if (p[0] === "drugs" && !p[1]) return renderDrugLibraryPage();
     if (p[0] === "drugs" && p[1]) return renderDrugDetailPage(p[1]);
-    if (p[0] === "orders") return renderOrderPage();
+    if (p[0] === "orders") return await renderOrderPage();
     if (p[0] === "import") return renderImportPage();
     renderError("未找到页面。", "404");
   } catch (error) {

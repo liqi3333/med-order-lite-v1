@@ -77,6 +77,15 @@ npm run dev
 
 `npm run dev` 会一直运行，停止时按 `Ctrl + C`。
 
+> 💡 如果启动时提示 `EADDRINUSE: address already in use :::8787`，说明 8787 端口被占用，可以用以下命令杀掉占用进程：
+
+```bash
+lsof -ti:8787 | xargs kill -9
+```
+
+然后重新运行 `npm run dev`。
+
+
 ---
 
 ## 常用命令
