@@ -1,6 +1,6 @@
 {
   "name": "med-order-lite",
-  "version": "9.2.1",
+  "version": "9.3.1",
   "private": true,
   "type": "module",
   "scripts": {
