@@ -1,6 +1,6 @@
 {
   "name": "med-order-lite-api",
-  "version": "0.7.1",
+  "version": "9.2.1",
   "description": "Lite backend API for drug information import, local markdown drug library, and candidate order generation.",
   "type": "module",
   "private": true,
